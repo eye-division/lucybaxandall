@@ -1,6 +1,6 @@
 ---
-layout: default
-head:  snipcart.html
+layout: page
+head: snipcart.html
 ---
 <div class="product-details">
   <img src="{{ page.image }}" alt="{{ page.name }}" class="thumbnail"/>
@@ -16,7 +16,7 @@ head:  snipcart.html
      data-item-name="{{ page.name }}"
      data-item-id="{{ page.sku }}"
      data-item-image="{{ page.image }}"
-     data-item-url="{{ site.baseurl }}"
+     data-item-url="{{ site.url }}"
      data-item-price="{{ page.price }}"
      data-item-description="{{ page.description }}">
      Buy it for £{{ page.price }}

@@ -16,7 +16,8 @@ description: Lucy Baxandall art gallery
 # root of your server.
 baseurl: ""
 # the base hostname & protocol for your site
-url: "https://www.lucybaxandall.com/"
+url: "http://rare-dragonfly.cloudvent.net/"
+#url: "https://www.lucybaxandall.com/"
 logo: "/siteicon.png"
 email: a.ward@eyedivision.com
 
