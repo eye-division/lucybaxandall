@@ -8,7 +8,7 @@ exclude:
 
 # Site settings
 title: Lucy Baxandall
-subtitle: Lucy Baxandall Eye Gallery built on Bourbon and Neat
+subtitle: Paperwoman
 name: Lucy Baxandall
 description: Lucy Baxandall art gallery
 # Base URL of site (i.e. /blog). It should always start with a slash,
@@ -34,20 +34,32 @@ imagecdn:
 
 # Collections
 collections:
-    gallery:
+    work:
         output: true
-        permalink: /gallery/:path/
+        permalink: /work/:path/
         _hide_content: true
+    products:
+        output: true
+        permalink: /products/:path/
+        _hide_content: true
+
+# Snipcart API key
+snipcart_api_key: NzE2ODAzN2MtMWNkOS00NDNmLTlhNzYtYWI5Y2MwZGZhNDEyNjM2MTY3ODc5MzE4NzY1NjQz
 
 # Defaults Example
 defaults:
     -
         scope:
             path: ""
-            type: "gallery"
+            type: "work"
         values:
             layout: "gallery"
-
+    -
+        scope:
+            path: ""
+            type: "shop"
+        values:
+            layout: "gallery"
 
 # Google analytics
 ga_tracking_id: "UA-72960331-1"

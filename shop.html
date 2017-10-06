@@ -1,16 +1,16 @@
 ---
 layout: page
-title: "Galleries"
-permalink: /gallery/
+title: "Shop"
+permalink: /shop/
 ---
 <div class="gallery">
 
-{% for gallery in site.gallery %}
+{% for gallery in site.shop %}
 
      <div class="gallery-box{% cycle '', ' last' %}">
 
           <a href="{{ gallery.permalink }}" title="{{ gallery.title }}">
-	           {% include img.html src=gallery.image_path max-w=800 max-h=400 fit=crop alt=gallery.title %}
+	           {% include img.html src=gallery.main_image_path max-w=800 max-h=400 fit=crop alt=gallery.title %}
 	          <p>{{ gallery.title }}</p>
           </a>
 

@@ -1,14 +1,16 @@
 <header class="navigation" role="banner">
   <div class="banner">
     <a href="{{ site.baseurl }}/" class="logo">
-      {% if site.logo %}
-      <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
-      {% else %}
       <h1>{{ site.title }}</h1>
       <div class="subtitle">{{ site.subtitle }}</div>
-      {% endif %}
     </a>
   </div>
+  <div class="snipcart-summary">
+      <a href="#" class="snipcart-checkout">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        View cart (<span class="snipcart-total-items">0</span>)
+      </a>
+    </div>
     <div class="navigation-wrapper">
 
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">

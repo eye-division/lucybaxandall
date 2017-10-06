@@ -1,8 +1,14 @@
-- title: "Posts"
+- title: Home
+  href: /
+- title: "Work"
+  href: "/work/"
+- title: "Contact"
+  href: "/contact/"
+- title: "CV"
+  href: "/cv/"
+- title: "Papermaking classes, Events, News"
   href: "/posts/"
-  
-- title: "Projects"
-  href: "/projects/"
-  
-- title: "About"
-  href: "/about/"
+- title: "Shop"
+  href: "/products/"
+- title: "Sales"
+  href: "/sales/"
