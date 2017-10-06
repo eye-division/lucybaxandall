@@ -123,37 +123,45 @@ figcaption {
 }
 
 /*
-*   Banner
+*   Cover
 */
 .site-header-container, .post-header-container {
     width: 100%;
-    &.has-cover {
+
+}
+.has-cover {
+    color: $white;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.67) !important;
+    background-position: 50% 50%;
+    background-size: cover;
+    .title {
         color: $white;
-        text-shadow: 0 2px 1px rgba(0,0,0,0.67) !important;
-        background-position: 50% 50%;
-        background-size: cover;
-        .title {
-            font-size: modular-scale(6);
-        }
-        .subtitle, .info {
-            font-size: modular-scale(1);
-        }
+        font-family: $heading-font-family;
+        font-weight: 300;
+        font-size: modular-scale(4);
     }
-    .scrim {
-        padding: 3em 1em;
-        &.has-cover {
-            background-color: rgba(0,0,0,0.2);
-            padding: 0 0 6em  !important;
-            @include media($tablet) {
-                padding: 0 1em 9em !important;
-            }
-            .site-header {
-                background-color: rgba(0, 0, 0, 0.2);
-                padding: 0 1em !important;
-            }
+    .subtitle, .info {
+        font-family: $subheading-font-family;
+        font-size: modular-scale(3);
+        font-weight: 400;
+        font-style: italic;
+    }
+}
+.scrim {
+    padding: 3em 1em;
+    &.has-cover {
+        background-color: rgba(0,0,0,0.2);
+        padding: 0 0 6em  !important;
+        @include media($tablet) {
+            padding: 0 1em 9em !important;
+        }
+        .site-header {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 0 1em !important;
         }
     }
 }
+
 /*
  * page specific
  */
@@ -177,7 +185,6 @@ figcaption {
     padding: 1em;
     background-color: $white;
     .home, .page {
-
 
         @include media ($tablet) {
             padding: 1em 0;
@@ -235,112 +242,116 @@ figcaption {
         margin: auto;
         max-width: 100%;
     }
-    /*
-    *   Posts
-    */
-    .post {
-        ul {
-            margin-bottom: 1em;
-        }
-        .post-header-container {
-            .scrim {
-                padding: 2em 1em 1em 1em;
-            }
-        }
-        .post-meta {
-            padding-bottom: 1em;
-        }
-        .post-content {
-            padding: 1em 0;
-        }
-        .tags {
-            font-size: 0.9em;
-        }
-        .rss {
-            margin: 1em 0 0 0;
-            @include span-columns(12);
-            @include media ($tablet) {
-                margin: 1em 0;
-                @include span-columns(6);
-            }
-        }
-        .share {
-            font-weight: bold;
-            margin: 0 0 1em 0;
-            @include span-columns(12);
-            @include media ($tablet) {
-                @include span-columns(6);
-                margin: 1em 0;
-                text-align: right;
-            }
-            a {
-                width: 1em;
-                padding: 0 0.25em;
-                text-decoration: none;
-            }
-        }
-        .disqus {
-            @include span-columns(12);
-        }
-        .post-navigation {
-            font-size: 0.9em;
-            display: block;
-            width: auto;
-            .prev-post {
-                display: block;
-                width: 50%;
-                float: left;
-                margin: 1em 0;
-            }
-            .next-post {
-                display: block;
-                width: 50%;
-                float: left;
-                margin: 1em 0;
-                text-align: right;
-            }
+
+}
+/* front page only */
+.front .page-content {
+    @include outer-container(100%);
+}
+/*
+*   Pages
+*/
+.page {
+
+    .post-header {
+        padding: 0;
+        h1 {
+            padding-bottom: 0;
+            /*margin-bottom: 0;*/
         }
     }
-    /*
-    *   Pages
-    */
-    .page {
-
-        .post-header {
-            padding: 0;
-            h1 {
-                padding-bottom: 0;
-                /*margin-bottom: 0;*/
-            }
+    .posts-list {
+        @extend %default-ul;
+        li {
+            padding: modular-scale(-4);
+            padding-left: 0;
         }
-        .posts-list {
-            @extend %default-ul;
-            li {
-                padding: modular-scale(-4);
-                padding-left: 0;
-            }
-            .desc {
-                font-size: 0.9em;
-            }
-            .post-date {
-                color: $medium-gray;
-            }
+        .desc {
+            font-size: 0.9em;
         }
-        .profile {
-            max-width: 320px;
-            margin: auto;
-            padding-bottom: 0.5em;
+        .post-date {
+            color: $medium-gray;
         }
-
-
     }
-    input {
+    .profile {
+        max-width: 320px;
+        margin: auto;
+        padding-bottom: 0.5em;
+    }
+
+
+}
+input {
+    @include media ($tablet) {
+        width: 50%;
+    }
+}
+/*
+*   Posts
+*/
+.post {
+    ul {
+        margin-bottom: 1em;
+    }
+    .post-header-container {
+        .scrim {
+            padding: 2em 1em 1em 1em;
+        }
+    }
+    .post-meta {
+        padding-bottom: 1em;
+    }
+    .post-content {
+        padding: 1em 0;
+    }
+    .tags {
+        font-size: 0.9em;
+    }
+    .rss {
+        margin: 1em 0 0 0;
+        @include span-columns(12);
         @include media ($tablet) {
+            margin: 1em 0;
+            @include span-columns(6);
+        }
+    }
+    .share {
+        font-weight: bold;
+        margin: 0 0 1em 0;
+        @include span-columns(12);
+        @include media ($tablet) {
+            @include span-columns(6);
+            margin: 1em 0;
+            text-align: right;
+        }
+        a {
+            width: 1em;
+            padding: 0 0.25em;
+            text-decoration: none;
+        }
+    }
+    .disqus {
+        @include span-columns(12);
+    }
+    .post-navigation {
+        font-size: 0.9em;
+        display: block;
+        width: auto;
+        .prev-post {
+            display: block;
             width: 50%;
+            float: left;
+            margin: 1em 0;
+        }
+        .next-post {
+            display: block;
+            width: 50%;
+            float: left;
+            margin: 1em 0;
+            text-align: right;
         }
     }
 }
-
 /*
 *   Footer
 */

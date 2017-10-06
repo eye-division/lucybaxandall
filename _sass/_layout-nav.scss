@@ -8,7 +8,10 @@
 
 }
 .banner {
+    background-image: url('/assets/header.jpg');
     background-color: $black;
+    background-position: 50% 50%;
+    background-size: cover;
     color: $white;
     padding: 1em;
 }
@@ -24,8 +27,6 @@
 .logo {
     text-align: center;
     color: $white;
-    //float: left;
-    //height: 6em;
 
     span {
         font-size: 1.25em;
@@ -33,10 +34,13 @@
     h1 {
         margin-bottom: 0;
         color: $white;
-        font-weight: normal;
     }
     .subtitle {
-        color: #f7a476;
+        color: $white;
+        font-family: $subheading-font-family;
+        font-weight: 400;
+        font-style: italic;
+        font-size: modular-scale(3);
     }
     &:active,
     &:focus,

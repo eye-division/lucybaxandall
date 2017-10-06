@@ -1,22 +1,22 @@
 ---
-layout: page
+layout: home
 carousel:
-  - image: /assets/images/537a218dd0cad.jpg
+  - image:
     caption:
     link:
-  - image: /assets/images/53a81ca92b526.jpg
+  - image:
     caption:
     link:
-  - image: /assets/images/54b52e6418ed1.jpg
+  - image:
     caption:
     link:
-  - image: /assets/images/54b52eb58a666.jpg
+  - image:
     caption:
     link:
-  - image: /assets/images/54b544b9800a8.jpg
+  - image:
     caption:
     link:
-  - image: /assets/images/54b7d8d4e33bb.jpg
+  - image:
     caption:
     link:
 _options:
@@ -35,49 +35,14 @@ _comments:
     <p>This is the demo editable first paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, in magnam placeat. Ex illo ipsa libero voluptatem necessitatibus modi fugit odit omnis. Sequi voluptatem mollitia voluptatum ipsum placeat, quaerat laudantium!</p>
     </div>
 
-    {% if page.carousel %}
-    <!-- <div class="two-thirds no-gutter"> -->
-    <section>
-      <h2>This is a demo slideshow</h2>
-      <div class="flexslider">
-          <ul class="slides">
-            {% for slides in page.carousel %}
-            <li>
-              {% if slides.link %}
-              <a href="{{ site.baseurl }}{{ slides.link }}" title="View project">
-              {% endif %}
-              {% include img.html src=slides.image width=960 alt=slides.caption %}
-              {% if slides.link %}
-              </a>
-            {% endif %}
-              {% if slides.caption %}
-              <p class="flex-caption">{% if slides.link %}<a href="{{ site.baseurl }}{{ slides.link }}" title="View project">{% endif %}{{ slides.caption }}{% if slides.link %}&nbsp;<svg class="icon icon__white icon--readmore"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-double_angle_right" /></svg></a>{% endif %}</p>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
+      {% for gallery in site.work %}
+        <section class="gallery-cover {% if gallery.main_image_path %}has-cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+          <div class="scrim {% if gallery.cover %}has-cover{% endif %}">
+            <header class="gallery-header">
+              <a href="{{ gallery.url }}"><h2 class="title">{{ gallery.title }}</h2></a>
+            </header>
+          </div>
       </section>
-      <!-- </div> -->
-      {% endif %}
-
-      <section class="gallery">
-      {% for gallery in site.gallery %}
-
-           <div class="gallery-box gallery-box-home {% cycle '', ' last' %}">
-              <a href="{{ gallery.url }}">
-
-                {% if gallery.main_image_path %}
-                  {% include img.html src=gallery.main_image_path width=400 height=300 %}
-                {% else %}
-                  {% include img.html src="/siteicon.png" width=400 height=300 %}
-                {% endif %}
-
-                <h3>{{ gallery.title }}</h3>
-              </a>
-
-           </div>
-
       {% endfor %}
-      </section>
+
 
