@@ -1,6 +1,7 @@
 # External gems
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 exclude:
   - "/vendor/"
@@ -28,28 +29,28 @@ permalink: pretty
 
 # Image CDN
 imagecdn:
-  #staging: "http://ed-dev.imgix.net"
-  #production: "http://ed.imgix.net"
+  # staging: "http://ed-dev.imgix.net"
+  production: "http://ed-lucybaxandall.imgix.net"
 
 # Collections
 collections:
-#     projects:
-#         output: true
-#         permalink: /projects/:path/
-
+    gallery:
+        output: true
+        permalink: /gallery/:path/
+        _hide_content: true
 
 # Defaults Example
 defaults:
-#     -
-#         scope:
-#             path: ""
-#             type: "projects"
-#         values:
-#             layout: "project"
+    -
+        scope:
+            path: ""
+            type: "gallery"
+        values:
+            layout: "gallery"
 
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-72960331-1"
 
 # Google Recaptcha for contact form
 recaptcha_site_key: 6LdXwysUAAAAAAuPlVZIfOVpO9716wkvDHBHo2Wy
@@ -71,25 +72,19 @@ recaptcha_site_key: 6LdXwysUAAAAAAuPlVZIfOVpO9716wkvDHBHo2Wy
 #     share: true                           # Include in the "Share" section of posts
 social:
   - name: Twitter
-    icon: twitter
-    username:
-    url:
+    icon: icon-twitter_sign
+    username: LucyPaperBax
+    url: https://twitter.com/LucyPaperBax
     desc: Follow us on Twitter
     share: true
 
   - name: Facebook
-    icon: facebook
-    username:
-    url:
+    icon: icon-facebook_sign
+    username: lucybaxandallpaperwoman
+    url: http://www.facebook.com/lucybaxandallpaperwoman
     desc: Like us on Facebook
     share: true
 
-  - name: GitHub
-    icon: github
-    username:
-    url:
-    desc: Fork us on GitHub
-    share: false
 
   - name: LinkedIn
     icon: linkedin
@@ -106,7 +101,7 @@ social:
     share: false
 
   - name: Instagram
-    icon: instagram
+    icon: icon-instagram
     username:
     url:
     desc: Follow me on Instagram
@@ -115,16 +110,10 @@ social:
   - name: Pinterest
     icon: pinterest
     username:
-    url:
+    url: http://uk.pinterest.com/lucybaxandall
     desc: Follow me on Pinterest
     share: true
 
-  - name: SoundCloud
-    icon: soundcloud
-    username:
-    url:
-    desc: Follow me on SoundCloud
-    share: false
 
   - name: Vimeo
     icon: vimeo-square
@@ -137,10 +126,10 @@ social:
 # These are for automatically generating sharing metadata for FB and Twitter
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
 protocols:
-    fb_image: "/siteicon.png"
+    fb_image: "/assets/logo.png"
     fb_image_width: 480
     fb_image_height: 480
     fb_image_type: "image/png"
 
-    twitter_image: "/siteicon.png"
+    twitter_image: "/assets/logo.png"
 
