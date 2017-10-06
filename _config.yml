@@ -16,7 +16,7 @@ description: Lucy Baxandall art gallery
 # root of your server.
 baseurl: ""
 # the base hostname & protocol for your site
-url: "http://www.lucybaxandall.com/"
+url: "https://www.lucybaxandall.com/"
 logo: "/siteicon.png"
 email: a.ward@eyedivision.com
 
@@ -29,8 +29,8 @@ permalink: pretty
 
 # Image CDN
 imagecdn:
-  # staging: "http://ed-dev.imgix.net"
-  production: "http://ed-lucybaxandall.imgix.net"
+  staging: "https://ed-lucybaxandall-dev.imgix.net"
+  production: "https://ed-lucybaxandall.imgix.net"
 
 # Collections
 collections:
