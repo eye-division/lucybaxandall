@@ -128,11 +128,13 @@ li.nav-link {
     }
 }
 
-li.nav-link.active  {
+li.nav-link.active,
+li.active  {
     a {
         color: $aaa-link;
     }
 }
+
 li.more {
     overflow: visible;
     padding-right: 0;
