@@ -5,12 +5,7 @@
       <div class="subtitle">{{ site.subtitle }}</div>
     </a>
   </div>
-  <div class="snipcart-summary">
-      <a href="#" class="snipcart-checkout">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        View cart (<span class="snipcart-total-items">0</span>)
-      </a>
-    </div>
+
     <div class="navigation-wrapper">
 
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
@@ -50,6 +45,13 @@
         {% endfor %}
 
       </ul>
+      <div class="snipcart-summary">
+        <a href="#" class="snipcart-checkout">
+          <svg class="icon"><use xlink:href="#icon-cart" /></svg>
+
+          View cart (<span class="snipcart-total-items">0</span>)
+        </a>
+      </div>
     </nav>
   </div>
 </header>

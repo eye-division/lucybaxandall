@@ -121,8 +121,8 @@ social:
     share: false
 
   - name: Pinterest
-    icon: pinterest
-    username:
+    icon: icon-pinterest
+    username: lucybaxandall
     url: http://uk.pinterest.com/lucybaxandall
     desc: Follow me on Pinterest
     share: true
