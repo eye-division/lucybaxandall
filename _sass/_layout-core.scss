@@ -1,8 +1,5 @@
+///   Globals
 
-
-/*
-*   Globals
-*/
 html, body {
     margin: 0;
     padding: 0;
@@ -47,7 +44,7 @@ a, a:link {
         color: $black;
     }
 }
-/* SVG icons */
+/// SVG icons
 .icon {
     display: inline-block;
     width: 30px;
@@ -123,9 +120,7 @@ figcaption {
     }
 }
 
-/*
-*   Cover
-*/
+///  Cover
 .site-header-container, .post-header-container {
     width: 100%;
 
@@ -163,11 +158,7 @@ figcaption {
     }
 }
 
-/*
- * page specific
- */
-
-
+/// page specific
 .half {
     @include span-columns(12);
     @include media ($mobile) {
@@ -177,9 +168,9 @@ figcaption {
 .textright {
     text-align: right;
 }
-/*
-*   Body
-*/
+
+///   Body
+
 .page-content {
 
     @include outer-container;
@@ -193,9 +184,7 @@ figcaption {
 
     }
 
-    /*
-    *   index.html
-    */
+
     .post-list {
         padding-top: 1em !important;
         @extend %default-ul;
@@ -245,13 +234,12 @@ figcaption {
     }
 
 }
-/* front page only */
+/// front page only
 .front .page-content {
     @include outer-container(100%);
 }
-/*
-*   Pages
-*/
+///  Pages
+
 .page {
 
     .post-header {
@@ -287,9 +275,8 @@ input {
         width: 50%;
     }
 }
-/*
-*   Posts
-*/
+///   Posts
+
 .post {
     ul {
         margin-bottom: 1em;
@@ -353,9 +340,8 @@ input {
         }
     }
 }
-/*
-*   Footer
-*/
+///   Footer
+
 .site-footer {
     @include outer-container;
     padding: 1em;
@@ -379,9 +365,8 @@ input {
 
 
 }
-/*
-*   Site Navigation (left)
-*/
+///   Site Navigation (left)
+
 .site-navigation {
     @include span-columns(12);
     @include media ($mobile) {
@@ -395,9 +380,8 @@ input {
 .site-copyright {
     font-size: modular-scale(-2);
 }
-/*
-*   Site Description/Signature (right)
-*/
+///   Site Description/Signature (right)
+
 .site-signature {
     margin-top: 1em;
     text-align: center;
@@ -412,9 +396,8 @@ input {
         text-decoration: underline;
     }
 }
-/*
-*   Contact Info (center)
-*/
+///   Contact Info (center)
+
 .site-contact {
     margin-top: 1em;
     @include span-columns(12);
@@ -437,9 +420,8 @@ input {
     margin-top: 1em;
     text-align: center;
 }
-/*
-* Editor link
-*/
+/// Editor link
+
 .editor-link {
   display: none;
 }
@@ -449,9 +431,8 @@ input {
 
 }
 
-/*
-* Forms
-*/
+/// Forms
+
 fieldset {
     background-color: white;
       border: 1px solid #ccc;

@@ -1,9 +1,6 @@
 // Gallery layout
 // this is imported last from /css/main.scss
 
-/*
-* Gallery
- */
 .gallery {
 
     @include media ($tablet) {
@@ -61,7 +58,7 @@
     }
 }
 
-/* featured image on posts / events pages */
+///  featured image on posts / events pages
 .featured--col {
     @include media ($tablet) {
         @include span-columns(4);
@@ -72,9 +69,7 @@
         @include span-columns(6);
     }
 }
-/*
- * Lightbox
- */
+/// Lightbox
 
 .lb-dataContainer {
     background: $black;

@@ -1,6 +1,4 @@
-/*
-*   Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
-*/
+///    Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
 
 .navigation {
     margin: 0;
@@ -15,7 +13,7 @@
     color: $white;
     padding: 1em;
 }
-// Nav menu
+///  Nav menu
 .navigation-wrapper {
     @include outer-container;
     @include clearfix;
@@ -23,7 +21,7 @@
 
 }
 
-// logo
+///  logo
 .logo {
     text-align: center;
     color: $white;
@@ -57,7 +55,7 @@ a.logo h1 {
     color: $white;
 }
 
-// Mobile view
+///  Mobile view
 .navigation-menu-button {
     display: block;
     float: right;
@@ -95,7 +93,7 @@ ul.navigation-menu {
         display: block;
     }
 }
-// Nav items
+///  Nav items
 
 li.nav-link {
     display: block;
