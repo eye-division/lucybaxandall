@@ -34,20 +34,54 @@ _comments:
     <div class="editable">
     <p>This is the demo editable first paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, in magnam placeat. Ex illo ipsa libero voluptatem necessitatibus modi fugit odit omnis. Sequi voluptatem mollitia voluptatum ipsum placeat, quaerat laudantium!</p>
     </div>
-
-      {% for gallery in site.work %}
-        <section class="gallery-cover {% if gallery.main_image_path %}has-cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
-          <div class="scrim {% if gallery.main_image_path %}has-cover{% endif %}">
+    <!-- Papermaking and / or news -->
+    <section class="gallery-cover has-cover" style="background-image: url(/assets/header.jpg);">
+          <div class="scrim has-cover">
             <article class="gallery">
               <header class="gallery-header">
-                <a href="{{ gallery.url }}"><h2 class="title">{{ gallery.title }}</h2></a>
+                <a href="/posts/"><h2 class="title">Papermaking classes</h2></a>
               </header>
-              {% if gallery.homepage_markdown %}
-              <p>{{ gallery.homepage_markdown | markdownify }}</p>
-              {% endif %}
+              <p>We can arrange a studio visit or customised workshop for up to four people, adults or children - anything from an introduction to papermaking to more specialised areas.<br>
+                <a href="/posts/">Read more</a></p>
           </article>
           </div>
       </section>
-      {% endfor %}
 
+    {% for gallery in site.work %}
+      <section class="gallery-cover {% if gallery.main_image_path %}has-cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+        <div class="scrim {% if gallery.main_image_path %}has-cover{% endif %}">
+          <article class="gallery">
+            <header class="gallery-header">
+              <a href="{{ gallery.url }}"><h2 class="title">{{ gallery.title }}</h2></a>
+            </header>
+            {% if gallery.homepage_markdown %}
+            <p>{{ gallery.homepage_markdown | markdownify }}</p>
+            {% endif %}
+        </article>
+        </div>
+    </section>
+    {% endfor %}
 
+    <!-- Shop -->
+    <section class="gallery-cover has-cover" style="background-image: url(/assets/header.jpg);">
+        <div class="scrim has-cover">
+          <article class="gallery">
+            <header class="gallery-header">
+              <a href="/shop/"><h2 class="title">Shop</h2></a>
+            </header>
+            <p>Shop shop shop <br><a href="/shop/">Visit the shop</a></p>
+        </article>
+        </div>
+    </section>
+
+    <!-- About Lucy ? -->
+    <section class="gallery-cover has-cover" style="background-image: url(/assets/header.jpg);">
+          <div class="scrim has-cover">
+            <article class="gallery">
+              <header class="gallery-header">
+                <a href="/cv/"><h2 class="title">About Lucy Baxandall</h2></a>
+              </header>
+              <p>More about Lucy ... <br> <a href="/cv/">Read more </a></p>
+          </article>
+          </div>
+      </section>

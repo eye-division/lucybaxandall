@@ -87,6 +87,10 @@ a:hover .icon { /* hover colour */
   width: 24px;
   height: 24px;
 }
+/// menu icon
+.icon-menu {
+    fill : $lucyb-green;
+}
 
 pre code.hljs {
     font-size: modular-scale(-1);

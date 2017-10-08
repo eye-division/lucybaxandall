@@ -32,7 +32,7 @@
     text-shadow: 0 2px 1px rgba(0,0,0,0.8) !important;
     background: rgba($lucyb-green, 0.8);
     padding: 0 0.5em;
-    @include media ($tablet) {
+    @include media ($mobile) {
         width: 40%;
     }
     span {
@@ -84,7 +84,12 @@ a.logo h1 {
         display: none;
     }
 }
+.menu-title {
+    color: $lucyb-green;
+    font-size: 0.9em;
+    font-weight: 700;
 
+}
 
 nav {
     float: none;
