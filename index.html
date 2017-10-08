@@ -37,10 +37,15 @@ _comments:
 
       {% for gallery in site.work %}
         <section class="gallery-cover {% if gallery.main_image_path %}has-cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
-          <div class="scrim {% if gallery.cover %}has-cover{% endif %}">
-            <header class="gallery-header">
-              <a href="{{ gallery.url }}"><h2 class="title">{{ gallery.title }}</h2></a>
-            </header>
+          <div class="scrim {% if gallery.main_image_path %}has-cover{% endif %}">
+            <article class="gallery">
+              <header class="gallery-header">
+                <a href="{{ gallery.url }}"><h2 class="title">{{ gallery.title }}</h2></a>
+              </header>
+              {% if gallery.homepage_markdown %}
+              <p>{{ gallery.homepage_markdown | markdownify }}</p>
+              {% endif %}
+          </article>
           </div>
       </section>
       {% endfor %}

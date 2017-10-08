@@ -1,8 +1,31 @@
 ---
 layout: products
-title: Store
+title: Shop
 permalink: /products/
 ---
+<div class="editable">
+
+</div>
 {% for product in site.products %}
-  {% include product.html %}
+
+  <div class="product gallery-box {% cycle 'alpha', '', 'last' %}">
+
+	  <a class="" href="{{ site.baseurl }}{{ product.url }}">
+	    {% include img.html src=product.image width=300 height=300 fit=crop alt=product.name %}
+
+	    <p>{{ product.name }}</p>
+	  </a>
+
+	  <button
+	  class="snipcart-add-item"
+	  data-item-name="{{ product.name }}"
+	  data-item-id="{{ product.sku }}"
+	  data-item-image="{{ product.image }}"
+	  data-item-url="{{ site.url }}{{ page.url }}"
+	  data-item-price="{{ product.price }}">
+	  Buy it for £{{ product.price }}
+	  </button>
+
+	</div>
+
 {% endfor %}

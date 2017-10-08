@@ -2,7 +2,7 @@
 /// Snipcart styles
 ////
 
-.snipcart-summary{
+.snipcart-summary {
   font-size: 16px;
   line-height: 56px;
   letter-spacing: -1px;
@@ -10,58 +10,54 @@
   float: right;
 }
 
-.snipcart-checkout:hover{
+.snipcart-checkout:hover {
   color: #3F51B5;
   text-decoration: underline;
 }
 
-.snipcart-add-item{
+.snipcart-add-item {
   background-color: #3F51B5;
-  font-size: 18px;
   color: white;
-  border: 0px;
+  border: 0;
   border-radius: 3%;
 }
 
-.snipcart-add-item:hover{
+.snipcart-add-item:hover {
   box-shadow: 0px 3px 5px #888888;
 }
 
-.snipcart-add-item:active{
+.snipcart-add-item:active {
   box-shadow: 0 0 0 0;
 }
 
-.product-description{
+.product-description {
   width: 400px;
   padding: 25px;
   margin: 25px;
   background-color: #CFD8DC;
-  font-size: 20px;
+
 }
 
-.product-details{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.product-details {
+  @include media($tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-/*
-.products{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-*/
-
-.product{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.product {
+  @include media($mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   padding: 35px;
 }
 
-.product:hover{
+.product:hover {
   background-color: #CFD8DC;
 }
+

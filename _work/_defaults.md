@@ -1,6 +1,7 @@
 ---
 title: 
 description_markdown: 
+homepage_description_markdown: "Example home page advert text"
 _gallery_date: 
 permalink:
 main_image_path:

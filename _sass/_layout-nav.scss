@@ -9,25 +9,32 @@
 }
 .banner {
     background-image: url('/assets/header.jpg');
-    background-color: $black;
+    background-color: $lucyb-green;
     background-position: 50% 50%;
     background-size: cover;
     color: $white;
-    padding: 1em;
+    padding: 0.5em 1em 3em;
 }
 ///  Nav menu
 .navigation-wrapper {
     @include outer-container;
     @include clearfix;
     position: relative;
-
+    @include media ($tablet) {
+       @include outer-container(100%);
+    }
 }
 
 ///  logo
 .logo {
-    text-align: center;
+    display: block;
     color: $white;
-
+    text-shadow: 0 2px 1px rgba(0,0,0,0.8) !important;
+    background: rgba($lucyb-green, 0.8);
+    padding: 0 0.5em;
+    @include media ($tablet) {
+        width: 40%;
+    }
     span {
         font-size: 1.25em;
     }
@@ -57,6 +64,15 @@ a.logo h1 {
     color: $white;
 }
 
+/// social in header
+
+.social-media-list {
+    @extend %default-ul;
+    li {
+        display: inline-block;
+    }
+}
+
 ///  Mobile view
 .navigation-menu-button {
     display: block;
@@ -76,6 +92,7 @@ nav {
     @include media ($tablet) {
         text-align: center;
         line-height: 1.5em;
+        padding: 1.25em 0 0;
     }
 }
 
@@ -89,7 +106,7 @@ ul.navigation-menu {
     @include media ($tablet) {
         display: block;
         margin: 0;
-        padding: 0;
+        padding: 0 0.5em;
     }
     &.show {
         display: block;
@@ -111,6 +128,7 @@ li.nav-link {
     a {
         color: $navigation-color;
         display: inline-block;
+        padding-right: 0.5em;
         @include media ($tablet) {
             padding-right: 1.5em;
         }
