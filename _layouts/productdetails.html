@@ -2,8 +2,10 @@
 layout: page
 head: snipcart.html
 ---
+
 <div class="product-details">
-  <img src="{{ page.image }}" alt="{{ page.name }}" class="thumbnail"/>
+  {% include img.html src=page.image max-w=400 fit=clip alt=page.name %}
+
   <div class="product-description">
     <p>{{ page.name }}</p>
 
