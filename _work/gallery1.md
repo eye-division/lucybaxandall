@@ -4,7 +4,7 @@ description_markdown:
 homepage_markdown: "Example home page advert text"
 _gallery_date: 2016-05-01 00:00:00
 permalink: /work/3d-paper/
-main_image_path: /assets/images/54b53cd542b8a.jpg
+main_image_path: /assets/3dpaper.jpg
 images:
   - image_path: /assets/images/54b53cd542b8a.jpg
     image_title: Unfinished business

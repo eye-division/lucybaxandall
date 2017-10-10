@@ -20,7 +20,10 @@
 
           {% if link.subcategories != null %}
 
-          <li class="nav-link{% if page.url == link.href %} active{% endif %} menu__container more" id="menu__container">
+          {% if page.url != '/' and page.url == link.href %}
+            {% assign active = true %}
+          {% endif %}
+          <li class="nav-link{% if active %} active{% endif %} menu__container more" id="menu__container">
             <a href="#menu" id="menu__button" class="menu__button">{{ link.title }}</a>
             <div id="menuclick" class="menuclick">
               <ul class="submenu">
@@ -36,10 +39,14 @@
           </li>
 
           {% else %}
-
-          <li class="nav-link{% if page.url == link.href %} active{% endif %} {% if link.subcategories != null %} more{%endif %}">
-            <a href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
-          </li>
+            {% if page.url != '/' and page.url == link.href %}
+              {% assign active = true %}
+            {% else %}
+              {% assign active = false %}
+            {% endif %}
+            <li class="nav-link{% if active %} active{% endif %}{% if link.subcategories != null %} more{%endif %}">
+              <a href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
+            </li>
 
           {% endif %}
 
@@ -47,21 +54,21 @@
 
         {% for social in site.social %}
           {% if social.url != null %}
-          <li class="nav-link">
+          <li class="nav-link social">
             <a href="{{ social.url }}" title="{{ social.desc }}">
               <svg class="icon {{ social.icon }}"><use xlink:href="#{{ social.icon }}" /></svg>
             </a>
           </li>
           {% endif %}
         {% endfor %}
-
-        <li class="nav-link">
-          <a href="#" class="snipcart-checkout">
-          <svg class="icon icon-cart"><use xlink:href="#icon-cart" /></svg>
-          View cart (<span class="snipcart-total-items">0</span>)
-          </a>
-        </li>
-
+        {% if site.snipcart_api_key %}
+          <li class="nav-link">
+            <a href="#" class="snipcart-checkout">
+            <svg class="icon icon-cart"><use xlink:href="#icon-cart" /></svg>
+            View cart (<span class="snipcart-total-items">0</span>)
+            </a>
+          </li>
+        {% endif %}
       </ul>
 
     </nav>

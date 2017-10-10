@@ -4,7 +4,7 @@ description_markdown:
 homepage_markdown: "Example home page advert text"
 _gallery_date: 2016-05-01 00:00:00
 permalink: /work/2d-paper/
-main_image_path: /assets/images/54b53f6ed363d.jpg
+main_image_path: /assets/2dpaper.jpg
 images: 
   - image_path: /assets/images/54b53f6ed363d.jpg
     image_title: Normal, Reverse, Horse (Detail)
@@ -29,13 +29,13 @@ Price: £150.00"
     image_description: "27cm x 27cm
 Date: 2012
 Medium: Cotton/abaca paper, watercolour, ink
-Price: ££100"
+Price: £100"
   - image_path: /assets/images/50be2c35c9b6d.jpg
     image_title: Enclosures 2
     image_description: "27cm x 27cm
 Date: 2012
 Medium: Cotton/abaca paper, watercolour, ink
-Price: ££100"
+Price: £100"
   - image_path: /assets/images/50be2c6b0dcfa.jpg
     image_title: Enclosures 3
     image_description: "27cm x 27cm

@@ -2,20 +2,32 @@
 layout: page
 title: "Work"
 permalink: /work/
+main_image_path:
+image_caption:
+frontpage: false
+description_markdown:
+frontpagetitle:
+_options:
+  main_image_path:
+    width: 1200
+    height: 1200
+    resize_style: "contain"
+    mime_type: "image/jpeg"
 ---
 
 <div class="editable">
     <p>This is the demo editable first paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, in magnam placeat. Ex illo ipsa libero voluptatem necessitatibus modi fugit odit omnis. Sequi voluptatem mollitia voluptatum ipsum placeat, quaerat laudantium!</p>
 </div>
+
 <div class="gallery">
 
 {% for gallery in site.work %}
 
-     <div class="">
+     <div class="gallery-cover">
 
           <a href="{{ gallery.permalink }}" title="{{ gallery.title }}">
 	           {% include img.html src=gallery.main_image_path width=1200 max-h=400 fit=clip alt=gallery.title %}
-	          <p>{{ gallery.title }}</p>
+	          <h2>{{ gallery.title }}</h2>
           </a>
 
      </div>
