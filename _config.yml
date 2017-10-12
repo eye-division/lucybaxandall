@@ -16,7 +16,7 @@ description: Lucy Baxandall art gallery
 # root of your server.
 baseurl: ""
 # the base hostname & protocol for your site
-url: "https://www.lucybaxandall.com/"
+url: "https://www.lucybaxandall.com"
 #url: "https://www.lucybaxandall.com/"
 logo: "/siteicon.png"
 email: a.ward@eyedivision.com
@@ -34,6 +34,12 @@ imagecdn:
   staging: "https://ed-lucybaxandall-dev.imgix.net"
   production: "https://ed-lucybaxandall.imgix.net"
 
+# Environment settings
+appurl:
+    development: "http://0.0.0.0:4000"
+    staging: "http://rare-dragonfly.cloudvent.net"
+    production: "https://www.lucybaxandall.com"
+
 # Collections
 collections:
     work:
@@ -46,7 +52,10 @@ collections:
         _hide_content: true
 
 # Snipcart API key
-snipcart_api_key: NzE2ODAzN2MtMWNkOS00NDNmLTlhNzYtYWI5Y2MwZGZhNDEyNjM2MTY3ODc5MzE4NzY1NjQz
+# snipcart_api_key: NzE2ODAzN2MtMWNkOS00NDNmLTlhNzYtYWI5Y2MwZGZhNDEyNjM2MTY3ODc5MzE4NzY1NjQz
+
+# PayPal merchant ID
+paypal_id: GHHS3LSA9994Y
 
 # Default home page image
 # bgimage: '/assets/header.jpg'

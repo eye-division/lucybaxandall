@@ -1,28 +1,44 @@
 ---
 layout: page
-head: snipcart.html
 ---
 
 <div class="product-details">
   {% include img.html src=page.image max-w=400 fit=clip alt=page.name %}
 
   <div class="product-description">
-    <p>{{ page.name }}</p>
+    <h3>{{ page.name }}</h3>
 
     <p>
       {{ page.content }}
     </p>
 
-    <button
-    class="snipcart-add-item"
-     data-item-name="{{ page.name }}"
-     data-item-id="{{ page.sku }}"
-     data-item-image="{{ page.image }}"
-     data-item-url="{{ site.url }}{{ page.url }}"
-     data-item-price="{{ page.price }}"
-     data-item-description="{{ page.description }}">
-     Buy it for £{{ page.price }}
-    </button>
+    <form class="cart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="addCart">
+      <fieldset>
+        <legend>Ship to UK/EU</legend>
+        <p><strong>Item cost:</strong> &pound;{{ page.price_number }}
+        {% if page.shipping_uk_number %}
+          <br><strong>Postage:</strong> &pound;{{ page.shipping_uk_number }} each
+          <input type="hidden" name="shipping" value="{{ page.shipping_uk_number }}" />
+        {% endif %}</p>
+        <input type="hidden" name="cmd" value="_cart" />
+        <input type="hidden" name="add" value="1" />
+        <input type="hidden" name="charset" value="utf-8" />
+        <input type="hidden" name="business" value="{{ site.paypal_id }}" />
+        <input type="hidden" name="lc" value="GB" />
+        <input type="hidden" name="item_name" value="{{ page.name }}" />
+        <input type="hidden" name="item_number" value="{{ page.sku }}" />
+        <input type="hidden" name="amount" value="{{ page.price_number }}">
+        <input type="hidden" name="currency_code" value="GBP" />
+        <input type="hidden" name="button_subtype" value="products" />
+        <input type="hidden" name="shopping_url" value="{{ site.appurl[jekyll.environment]}}{{ page.url }}">
+        <input type="hidden" name="no_shipping" value="2" />
+        <input type="hidden" name="bn" value="PP-ShopCartBF:Btn2_EN_addtocart.gif:NonHosted" />
+
+        <input type="submit" value="Add to cart" class="paypal-add-item" />
+
+      </fieldset>
+    </form>
+
 
   </div>
 </div>

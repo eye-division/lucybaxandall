@@ -61,6 +61,16 @@
           </li>
           {% endif %}
         {% endfor %}
+        {% if site.paypal_id %}
+          <li class="nav-link">
+            <form class="cart" name="cart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart" />
+              <input type="hidden" name="business" value="{{ site.paypal_id }}" />
+              <input type="hidden" name="display" value="1" />
+              <input type="submit" value="View cart" class="paypal-add-item" />
+            </form>
+          </li>
+        {% endif %}
         {% if site.snipcart_api_key %}
           <li class="nav-link">
             <a href="#" class="snipcart-checkout">
