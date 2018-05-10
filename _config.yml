@@ -8,9 +8,9 @@ exclude:
 
 # Site settings
 title: Lucy Baxandall
-subtitle: Paperwoman
+subtitle: Tidekettle Paper
 name: Lucy Baxandall
-description: Lucy Baxandall art gallery
+description: Lucy Baxandall Tidekettle Paper
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -79,7 +79,7 @@ defaults:
 ga_tracking_id: "UA-72960331-1"
 
 # Google Recaptcha for contact form
-recaptcha_site_key: 6LdXwysUAAAAAAuPlVZIfOVpO9716wkvDHBHo2Wy
+recaptcha_site_key: "6LdXwysUAAAAAAuPlVZIfOVpO9716wkvDHBHo2Wy"
 
 # Social icons and sharing options
 #
