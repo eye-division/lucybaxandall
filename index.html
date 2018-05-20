@@ -34,9 +34,9 @@ _comments:
   caption: optional caption
 ---
 
-    <div class="editable">
-    <p>This is the demo editable first paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, in magnam placeat. Ex illo ipsa libero voluptatem necessitatibus modi fugit odit omnis. Sequi voluptatem mollitia voluptatum ipsum placeat, quaerat laudantium!</p>
-    </div>
+<div class="editable">
+          <p>Welcome to the world of handmade paper. It's a surface for other media and also a remarkably versatile medium in itself. You can find our papers here online, and an ever-changing selection at our real-life shop in beautiful Berwick-upon-Tweed. We also run regular hand papermaking workshops and classes around the country.&nbsp;</p>
+        </div>
 
     {% for section in site.pages %}
 
@@ -53,9 +53,9 @@ _comments:
                 <h2 class="title">{{ section.frontpagetitle }}</h2>
               </header>
               {% if section.description_markdown %}
-                <p>{{ section.description_markdown | markdownify }}<br>
+                <p>{{ section.description_markdown | markdownify }}<br />
                 <span class="readmore">Read more <span>{{nextPost.title}} <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg></span>
-                </p>
+                </span></p>
               {% endif %}
           </article>
           </div>
@@ -86,3 +86,4 @@ _comments:
     {% endfor %}
 
 
+</section>
