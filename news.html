@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Tidekettle News"
-main_image_path:
+title: Tidekettle News
+main_image_path: /uploads/img-2961.jpg
 image_caption:
 permalink: /news/
 frontpage: false
@@ -11,9 +11,11 @@ _options:
   main_image_path:
     width: 1200
     height: 1200
-    resize_style: "contain"
-    mime_type: "image/jpeg"
+    resize_style: contain
+    mime_type: image/jpeg
+    correct_orientation: true
 ---
+
 <section class="blog">
 
       {% for post in site.posts limit: 4 %}
@@ -29,7 +31,7 @@ _options:
           </figure>
         {% endif %}
 
-        {% if post.main_image_path %}<p class="with--feature">{% else %}<p>{% endif %}
+        {% if post.main_image_path %}<p class="with--feature">{% else %}</p><p>{% endif %}
         {{ post.content | strip_html | truncatewords: 50 }} <a href="{{ post.url | prepend: site.baseurl }}">read more</a></p>
         <div class="post-meta">
           <!-- <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div> -->
@@ -37,7 +39,7 @@ _options:
           <a href="cloudcannon:collections/{{ post.path }}" class="editor-link">Edit post</a>
         </div>
         <p></p>
-        </li>
+        
       {% endfor %}
   </section>
 
@@ -83,7 +85,7 @@ _options:
 
 <p>If you previously followed me on Instagram, my old account was strangely taken down by them for reasons that remain a mystery, but not to be deterred, I’ve started a new one! Links to that and Facebook page with regular updates in the top right corner.</p>
 
-<p>Do get in touch any time using the contact page or Facebook. We can arrange a studio visit or customised workshop for up to four people, adults or children - anything from an introduction to papermaking to more specialised areas. If you are an artist or student who wishes to incorporate handmade paper into a project, I would be happy to help. I also provide a very reasonably-priced fibre processing service if you don't have access to a beater.</strong></p>
+<p>Do get in touch any time using the contact page or Facebook. We can arrange a studio visit or customised workshop for up to four people, adults or children - anything from an introduction to papermaking to more specialised areas. If you are an artist or student who wishes to incorporate handmade paper into a project, I would be happy to help. I also provide a very reasonably-priced fibre processing service if you don't have access to a beater.</p>
 
 
 <h3>Collaborations, etc:</h3>
@@ -97,7 +99,7 @@ _options:
 <p>Working with <a href="http://fixedoxford.blogspot.co.uk/2011/12/as-of-late.html">young entrepreneurs</a></p>
 
 
-<p><b><i>Lucy is available to teach papermaking and bookbinding workshops for adults and children by arrangement. Please use the contact page to discuss your requirements.<br>
+<p><b><i>Lucy is available to teach papermaking and bookbinding workshops for adults and children by arrangement. Please use the contact page to discuss your requirements.<br />
 </i></b></p>
 
  </div>
