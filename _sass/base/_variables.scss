@@ -1,10 +1,17 @@
 // Google Fonts
 @import url(//fonts.googleapis.com/css?family=Raleway:300,400|Playfair+Display:400,400i);
 
+@font-face {
+  font-family: 'VeteranTypewriter';
+  src: url('/assets/fonts/VeteranTypewriter.eot?#iefix') format('embedded-opentype'),  url('/assets/fonts/VeteranTypewriter.woff') format('woff'), url('/assets/fonts/VeteranTypewriter.ttf')  format('truetype'), url('/assets/fonts/VeteranTypewriter.svg#VeteranTypewriter') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // Typography
 $base-font-family: "Raleway", "Helvetica", "Arial", serif;
 $heading-font-family: "Raleway", "Helvetica", "Arial", serif;
-$subheading-font-family: "Playfair Display", serif;
+$subheading-font-family: "VeteranTypewriter", serif;
 
 // Font Sizes
 $base-font-size: $em-base; // 16px
