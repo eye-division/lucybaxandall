@@ -1,19 +1,18 @@
 ---
 layout: post
-title: "Outdoor taster workshops"
-date: 2017-05-27 00:00:00
-main_image_path: 
+title: Tidekettle - a dream between the city and the deep blue sea.
+date: 2018-06-21 10:00:00
+main_image_path: /uploads/img-2961.jpg
 images:
-  - image_path: 
-    description: 
+  - image_path: /uploads/img-2961.jpg
+    description:
+  - image_path:
+    description:
 _options:
   main_image_path:
     width: 1200
     height: 1200
-    resize_style: "contain"
-    mime_type: "image/jpeg"
+    resize_style: contain
+    mime_type: image/jpeg
 ---
 
-On 27 May my fellow Morley College tutors and I will be offering outdoor taster workshops in 4 exciting media as part of the wonderful Chelsea Fringe Garden Festival:
- 
-https://www.facebook.com/events/830720947080393/
