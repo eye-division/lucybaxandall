@@ -1,13 +1,15 @@
 ---
 layout: productdetails
-name: Warmest Wishes Card
+name: Tablemats
 shipping_uk_number: 2
-price_number: 2.75
-slug: warmest-wishes
-sku: warmestwishes
-image: /uploads/img-3199.jpg
-description: 'A6 Medium: Denim paper, white and pigmented cotton paper'
-category: Stationery
+price_number: 2.5
+slug: tablemats
+sku: table-mats
+image: /uploads/img-3214.jpg
+description: >-
+  6 handmade tablemats, cotton and linen fibres. Can also be used for drawing,
+  collage or many other art and craft projects.
+category: Tabletop
 _options:
   main_image_path:
     width: 1200
