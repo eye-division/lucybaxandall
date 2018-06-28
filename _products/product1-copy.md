@@ -4,7 +4,7 @@ name: Warmest Wishes Card
 shipping_uk_number: 2
 price_number: 2.75
 slug: warmest-wishes
-sku: stat-tr
+sku: warmestwishes
 image: /uploads/img-3199.jpg
 description: 'A6 Medium: Denim paper, white and pigmented cotton paper'
 category: Stationery
