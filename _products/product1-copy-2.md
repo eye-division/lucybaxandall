@@ -8,7 +8,9 @@ sku: table-mats
 image: /uploads/img-3214.jpg
 description: >-
   6 handmade tablemats, cotton and linen fibres. Can also be used for drawing,
-  collage or many other art and craft projects.
+  collage or many other art and craft projects. We'll choose a colour for you,
+  or let us know your preference via the contact page. We can also make any
+  quantity in your colour choice to order for special occasions.
 category: Tabletop
 _options:
   main_image_path:
