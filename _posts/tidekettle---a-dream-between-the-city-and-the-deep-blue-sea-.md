@@ -16,3 +16,8 @@ _options:
     mime_type: image/jpeg
 ---
 
+Tidekettle has been a long time coming. I'll spare you the history, but after many wanderings, I'm home. Friends thought I had taken leave of my senses, probably because I couldn't coherently explain a move, along with my elderly mother, but often without my London-working partner, from my native Big Smoke to "isn't that in Scotland?" &nbsp;And maybe that's the point - I'm done explaining. I need to show, and to do, and let the paper speak.
+
+Making and selling paper makes you a promoter and facilitator of other peoples' creativity. If you use the paper for your own artwork as well, be it drawings or artist's books, it can be confusing to people unless you are in a 'book and paper arts' setting. It starts messing with that pesky boundary between art and craft. If you openly admit to making greetings cards (the horror!), no serious gallery will touch you with a bargepole. Well I'm sorry, but I don't accept that making art with serious intent behind it precludes moonlighting as one of Santa's elves. I just don't see these activities as mutually exclusive unless you are a straight-up snob. I want to share my joy in making with other people. I want them to leave feeling better than when they came in, inspired and energised to make something themselves. To make that happen, a shop with a workspace was the answer, and that was not going to happen in London!
+
+&nbsp;
