@@ -3,7 +3,7 @@ layout: page
 title: Shop
 permalink: /products/
 frontpage: true
-description_markdown: "Choose from a range of hand-made stationery, tabletop ware, papers and books"
+description_markdown: 'Choose from a range of hand-made stationery, tabletop ware, papers and books'
 frontpagetitle: Shop
 main_image_path: /assets/shop.jpg
 image_caption:
@@ -11,29 +11,26 @@ _options:
   main_image_path:
     width: 1200
     height: 1200
-    resize_style: "contain"
-    mime_type: "image/jpeg"
+    resize_style: contain
+    mime_type: image/jpeg
 ---
+
 <div class="editable">
-<h2>Stationery</h2>
-<p>Handmade paper notecards (postcard style) for all occasions, created with recycled denim and other interesting fibres. Designed to be personalised by the sender. Design your own stamp, fill the pages of a book, use the back for greetings.</p>
-
-<h2>Tabletop</h2>
-<p>Absorbent art? Porous poetry? Cutting edge coasters? It's up to you what you use these for, but they'll certainly start conversations among your guests. All pieces are on cotton paper handmade in our studio, handprinted with our own text using the linocut technique. Do get in touch through the contact page if you are interested in custom orders for special occasions.</p>
-
-<h2>Papers</h2>
-<p>The papers for sale here are limited editions, with the fibres harvested, cooked, beaten and the sheets handmade in small batches. Generous A4 size. They can be used for printmaking, collage, writing beautiful letters and making books. All are tub-sized and most are inkjet printable AT YOUR OWN RISK! While making no archival claims, we pH test at each stage to ensure all paper is the right side of neutral. We use cotton, linen and abaca base pulps along with seasonal plant materials and other intriguing inclusions. Prices per sheet unless specified.</p>
-
-<h2>Books</h2>
-<p>Refillable notebooks with handmade paper covers that you will not find anywhere else. Sushi books for quiet moments. Wall pieces currently available are individually priced in their sections in the 'Work' category. Please do contact us if you would like a higher resolution image, or a complete image where only a detail is shown. Studio visits welcome by appointment.</p>
-
-</div>
+      <h2>Stationery</h2>
+      <p>Handmade paper notecards (postcard style) for all occasions, created with recycled denim and other interesting fibres. Designed to be personalised by the sender. Design your own stamp, fill the pages of a book, use the back for greetings.</p>
+      <h2>Tabletop</h2>
+      <p>Absorbent art? Porous poetry? Cutting edge coasters? It's up to you what you use these for, but they'll certainly start conversations among your guests. All pieces are on cotton paper handmade in our studio, handprinted with our own text using the linocut technique. Do get in touch through the contact page if you are interested in custom orders for special occasions.</p>
+      <h2>Papers</h2>
+      <p>The papers for sale here are limited editions, with the fibres harvested, cooked, beaten and the sheets handmade in small batches. Generous A4 size unless otherwise stated. They can be used for printmaking, collage, letter writing and making books. All are internally sized and most are inkjet printable at your own risk - single sheet feeding recommended! &nbsp;While making no archival claims, we pH test at each stage to ensure all paper is the right side of neutral. We use cotton, linen and abaca base pulps along with seasonal plant materials and other intriguing inclusions. Prices per sheet unless specified.</p>
+      <h2>Books</h2>
+      <p>Refillable notebooks with handmade paper covers. &nbsp;Wall pieces currently available are individually priced in their sections in the 'Work' category. &nbsp;Studio visits welcome by appointment.</p>
+    </div>
 
 {% for product in site.products %}
 
   <div class="product gallery-box {% cycle 'alpha', '', 'last' %}">
 
-	  <a class="" href="{{ site.baseurl }}{{ product.url }}">
+	  <a href="{{ site.baseurl }}{{ product.url }}">
 	    {% include img.html src=product.image width=300 height=300 fit=crop alt=product.name %}
 
 	    <p>{{ product.name }}</p>
@@ -51,10 +48,10 @@ _options:
         <input type="hidden" name="lc" value="GB" />
         <input type="hidden" name="item_name" value="{{ product.name }}" />
         <input type="hidden" name="item_number" value="{{ product.sku }}" />
-        <input type="hidden" name="amount" value="{{ product.price_number }}">
+        <input type="hidden" name="amount" value="{{ product.price_number }}" />
         <input type="hidden" name="currency_code" value="GBP" />
         <input type="hidden" name="button_subtype" value="products" />
-        <input type="hidden" name="shopping_url" value="{{ site.appurl[jekyll.environment]}}{{ page.url }}">
+        <input type="hidden" name="shopping_url" value="{{ site.appurl[jekyll.environment]}}{{ page.url }}" />
         <input type="hidden" name="no_shipping" value="2" />
         <input type="hidden" name="bn" value="PP-ShopCartBF:Btn2_EN_addtocart.gif:NonHosted" />
         <input type="submit" value="Add to cart" class="paypal-add-item" />
