@@ -8,9 +8,9 @@ layout: page
   <div class="product-description">
     <h3>{{ page.name }}</h3>
 
-    <p>
-      {{ page.content }}
-    </p>
+
+      {% if page.description_markdown %}{{ page.description_markdown | markdownify }}{% endif %}
+
 
     <form class="cart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="addCart">
       <fieldset>

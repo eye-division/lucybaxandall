@@ -6,8 +6,9 @@ price_number: 2.75
 slug: dyo-stamp-card
 sku: stat-dyosc
 image: /assets/images/5336ac71a2c3e.jpg
-description: 'A6
+description_markdown: 'A6
 Medium: Cotton paper, recycled paper'
+permalink: '/products/dyo-stamp-card/'
 category: "Stationery"
 _options:
   main_image_path:
@@ -22,6 +23,3 @@ _comments:
   main_image_path: Upload an image
   category: 'i.e. tableware'
 ---
-Postcard waiting to be personalised by you, blank on the back, bagged with kraft paper envelope.   
-A6  
-Medium: Cotton paper, recycled paper

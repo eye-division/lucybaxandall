@@ -6,8 +6,9 @@ price_number: 2.75
 slug: book-card
 sku: stat-bookcard
 image: /assets/images/53a81e18d9704.jpg
-description: 'A6
+description_markdown: 'A6
 Medium: Denim paper, recycled paper'
+permalink: '/products/book-card/'
 category: "Stationery"
 _options:
   main_image_path:
@@ -22,5 +23,4 @@ _comments:
   main_image_path: Upload an image
   category: 'i.e. tableware'
 ---
-An open book to add literary weight to your message and/or images. Customise! Bagged with kraft paper envelope.   
-A6  
+

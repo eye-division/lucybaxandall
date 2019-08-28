@@ -6,7 +6,8 @@ price_number: 10.00
 slug: we-sat-in-the-dusk-coaster
 sku: tt-dusk-coasters
 image: /assets/images/5332f9212f89c.jpg
-description: 'A poetic coaster set'
+permalink: '/products/we-sat-in-the-dusk-coaster/'
+description_markdown: 'A poetic coaster set'
 category: "Tabletop"
 _options:
   main_image_path:
@@ -21,6 +22,3 @@ _comments:
   main_image_path: Upload an image
   category: 'i.e. tableware'
 ---
-A poetic coaster set (4) for your evening get-togethers.      
-10cm x 10cm  
-Cotton paper, linocut

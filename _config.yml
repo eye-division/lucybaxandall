@@ -37,7 +37,7 @@ imagecdn:
 # Environment settings
 appurl:
     development: "http://0.0.0.0:4000"
-    staging: "http://rare-dragonfly.cloudvent.net"
+    staging: "https://rare-dragonfly.cloudvent.net"
     production: "https://www.lucybaxandall.com"
 
 # Collections

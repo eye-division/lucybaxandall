@@ -6,7 +6,8 @@ price_number: 10.00
 slug: paper-selection
 sku: pp-select
 image: /assets/images/53355e70207af.jpg
-description: 'Sample pack'
+description_markdown: 'Sample pack'
+permalink: '/products/paper-selection/'
 category: "Papers"
 _options:
   main_image_path:
@@ -21,5 +22,4 @@ _comments:
   main_image_path: Upload an image
   category: 'i.e. tableware'
 ---
-Sample pack of six different A4 sheets: 3 plant papers and 3 assorted coloured papers for all sorts of projects. Details of fibres included.  
-A4
+

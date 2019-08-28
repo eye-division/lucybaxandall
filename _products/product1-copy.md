@@ -6,7 +6,8 @@ price_number: 2.75
 slug: warmest-wishes
 sku: warmestwishes
 image: /uploads/img-3199.jpg
-description: 'A6 Medium: Denim paper, white and pigmented cotton paper'
+description_markdown: 'A6 Medium: Denim paper, white and pigmented cotton paper'
+permalink: '/products/warmest-wishes-card/'
 category: Stationery
 _options:
   main_image_path:
@@ -21,6 +22,3 @@ _comments:
   main_image_path: Upload an image
   category:
 ---
-Low tech THX. Postcard, blank on back, bagged with kraft paper envelope  
-A6  
-Medium: Denim paper, recycled paper
