@@ -1,0 +1,62 @@
+---
+layout: page
+title: Tidekettle News
+main_image_path: /uploads/img-2961.jpg
+image_caption:
+permalink: /news/
+frontpage: false
+description_markdown:
+frontpagetitle:
+_options:
+  main_image_path:
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+    correct_orientation: true
+---
+
+<section class="blog">
+
+      {% for post in site.posts limit: 4 %}
+        <a href="{{ post.url | prepend: site.baseurl }}"><h4>{{ post.title }}</h4></a>
+
+        {% if post.main_image_path %}
+          <figure class="featured--col">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+            {% assign alt_text = post.title %}
+            {% if post.image_caption %} {% assign alt_text = post.image_caption %} {% endif %}
+            {% include img.html src=post.main_image_path width=200 alt=alt_text %}
+            </a>
+          </figure>
+        {% endif %}
+
+        {% if post.main_image_path %}<p class="with--feature">{% else %}</p><p>{% endif %}
+        {{ post.content | strip_html | truncatewords: 50 }} <a href="{{ post.url | prepend: site.baseurl }}">read more</a></p>
+        <div class="post-meta">
+          <!-- <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div> -->
+          <!-- Editor Link -->
+          <a href="cloudcannon:collections/{{ post.path }}" class="editor-link">Edit post</a>
+        </div>
+        <p></p>
+        
+      {% endfor %}
+  </section>
+
+<div class="editable">
+  <p>Regular studio updates, pictures and news are now on Facebook at Lucy at Tidekettle Paper: click on the link top right to take you straight there. (it's a public page so you don't need a Facebook account to view it, only if you want to like, comment or share). I also post frequent updates on Twitter and Instagram, so feel free to follow, links also above.</p>
+  <p>You can join my mailing list via the contact page for email updates at decent intervals.</p>
+  <p><strong>Forthcoming Events:&nbsp;</strong></p>
+  <p>I'll be doing a papermaking demonstration in October as part of the <a href="https://berwickliteraryfestival.com/the-fringe/">Berwick Literary Festival Fringe</a>.</p>
+  <p>Do get in touch any time using the contact page or Facebook. We can arrange a studio visit or customised workshop for up to four people, adults or children - anything from an introduction to papermaking to more specialised areas. If you are an artist or student who wishes to incorporate handmade paper into a project, I would be happy to help. I also provide a &nbsp;reasonably-priced fibre processing service if you don't have access to a beater.</p>
+  <h3>Collaborations, etc:</h3>
+  <p>Completed sports pitches by <a href="http://jaycover.com/index.php/projects/court-drawings/">Jay Cover</a></p>
+  <p>I have a little papermaking story on the&nbsp;<a href="http://www.morleycollege.ac.uk/news/2218_papermaking_me">Morley College website</a>!</p>
+  <p><a href="http://perversionsofpaper.com/invitational-workshop/participants/">Perversions of Paper</a>, Invitational Symposium, June 20 2014, Birkbeck College, London</p>
+  <p><a href="http://www.kagithane.bel.tr/guncel/haber_detail/EL-YAPIMI-KAGIDA-ULUSLAR-ARASI-ILGI/76/2659/0">Meeting the Mayor of Kagithane</a> in Istanbul with the late, great Oz Tugrul and his lovely family (sorry no Turkish g's/i's!)</p>
+  <p>See our chairs at the <a href="http://www.saatchi-gallery.co.uk/schools/previous_on_art_prize_gallery.htm">Saatchi Gallery</a></p>
+  <p>Check out my entry for <a href="http://www.arthousecoop.com/library?utf8=âœ“&amp;display_name=baxandall&amp;theme_id=66&amp;commit=Search&amp;country=&amp;city=&amp;province=&amp;state=">The Sketchbook Project 2011</a></p>
+  <p>Working with <a href="http://fixedoxford.blogspot.co.uk/2011/12/as-of-late.html">young entrepreneurs</a></p>
+  <p><b><i>Lucy is available to teach papermaking and bookbinding workshops for adults and children by arrangement. Please use the contact page to discuss your requirements.</i></b></p>
+</div>
+

@@ -1,34 +1,86 @@
 <header class="navigation" role="banner">
-  <div class="navigation-wrapper">
+  <div class="banner">
     <a href="{{ site.baseurl }}/" class="logo">
-      {% if site.logo %}
-      <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
-      {% else %}
-      <span>{{ site.title }}</span>
-      {% endif %}
+      <h1>{{ site.title }}</h1>
+      <div class="subtitle">{{ site.subtitle }}</div>
     </a>
+
+
+  </div>
+
+    <div class="navigation-wrapper">
+
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
-      <i class="fa fa-bars"></i>
+      <span class="menu-title">MENU</span> <svg class="icon icon-menu"><use xlink:href="#icon-reorder" /></svg>
     </a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
+
         {% for link in site.data.nav %}
-          <li class="nav-link{% if page.url == link.href %} active{% endif %}"><a href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
-        {% endfor %}
-        
-        {% if false %}
-        <!-- alternative social links in nav menu -->
-          {% for social in site.social %}
-            {% if social.url != null %}
-            <li class="nav-link social">
-              <a href="{{ social.url }}" title="{{ social.desc }}">
-                <i class="fa fa-{{ social.icon }}"></i>
-              </a>
-            </li>
+
+          {% if link.subcategories != null %}
+
+          {% if page.url != '/' and page.url == link.href %}
+            {% assign active = true %}
+          {% endif %}
+          <li class="nav-link{% if active %} active{% endif %} menu__container more" id="menu__container">
+            <a href="#menu" id="menu__button" class="menu__button">{{ link.title }}</a>
+            <div id="menuclick" class="menuclick">
+              <ul class="submenu">
+
+                {% for subcategory in link.subcategories %}
+
+                     <li><a href="{{ subcategory.subhref | prepend: site.baseurl }}">{{ subcategory.subtitle }}</a></li>
+
+                {% endfor %}
+
+              </ul>
+            </div>
+          </li>
+
+          {% else %}
+            {% if page.url != '/' and page.url == link.href %}
+              {% assign active = true %}
+            {% else %}
+              {% assign active = false %}
             {% endif %}
-          {% endfor %}
+            <li class="nav-link{% if active %} active{% endif %}{% if link.subcategories != null %} more{%endif %}">
+              <a href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
+            </li>
+
+          {% endif %}
+
+        {% endfor %}
+
+        {% for social in site.social %}
+          {% if social.url != null %}
+          <li class="nav-link social">
+            <a href="{{ social.url }}" title="{{ social.desc }}">
+              <svg class="icon {{ social.icon }}"><use xlink:href="#{{ social.icon }}" /></svg>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+        {% if site.paypal_id %}
+          <li class="nav-link">
+            <form class="cart" name="cart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart" />
+              <input type="hidden" name="business" value="{{ site.paypal_id }}" />
+              <input type="hidden" name="display" value="1" />
+              <input type="submit" value="View cart" class="paypal-add-item" />
+            </form>
+          </li>
+        {% endif %}
+        {% if site.snipcart_api_key %}
+          <li class="nav-link">
+            <a href="#" class="snipcart-checkout">
+            <svg class="icon icon-cart"><use xlink:href="#icon-cart" /></svg>
+            View cart (<span class="snipcart-total-items">0</span>)
+            </a>
+          </li>
         {% endif %}
       </ul>
+
     </nav>
   </div>
 </header>

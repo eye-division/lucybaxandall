@@ -1,0 +1,36 @@
+---
+layout: page
+title: Work
+permalink: /work/
+main_image_path:
+image_caption:
+frontpage: false
+description_markdown:
+frontpagetitle:
+_options:
+  main_image_path:
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+---
+
+<div class="editable">
+      <p>Tidekettle exists to explore the versatility of paper and encourage creativity and imagination in everyone who uses it for writing, artwork, crafts, or teaching. Possibilities are unlimited.&nbsp;</p>
+    </div>
+
+<div class="gallery">
+
+{% for gallery in site.work %}
+
+     <div class="gallery-cover">
+
+          <a href="{{ gallery.permalink }}" title="{{ gallery.title }}">
+	           {% include img.html src=gallery.main_image_path width=1200 max-h=400 fit=clip alt=gallery.title %}
+	          <h2>{{ gallery.title }}</h2>
+          </a>
+
+     </div>
+
+{% endfor %}
+</div>

@@ -1,8 +1,16 @@
-- title: "Posts"
-  href: "/posts/"
-  
-- title: "Projects"
-  href: "/projects/"
-  
-- title: "About"
-  href: "/about/"
+- title: Home
+  href: /
+- title: "Work"
+  href: "/work/"
+- title: "Contact"
+  href: "/contact/"
+- title: "CV"
+  href: "/cv/"
+- title: "Papermaking classes"
+  href: "/papermaking-classes/"
+- title: "Tidekettle News"
+  href: "/news/"
+- title: "Shop online"
+  href: "/products/"
+- title: "Sales"
+  href: "/sales/"
