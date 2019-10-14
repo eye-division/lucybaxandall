@@ -5,8 +5,11 @@ shipping_uk_number:
 price_number: 15
 slug: refillable
 sku: bks-refill
-image: /assets/images/538ca1421586f.jpg
-description_markdown: Refillable Notebook
+image: /uploads/img-7318.jpeg
+description_markdown: >-
+  Refillable notebook with tough handmade flax-mix cover, handmade rag paper
+  pages and instructions for making your own refills. Decorated with a linocut
+  fish or ammonite.
 permalink: /products/refillable-notebook/
 category: Papers
 _options:
