@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Thanks Blue
-shipping_uk_number: 2
+shipping_uk_number:
 price_number: 2.75
 slug: thanks-yellow
 sku: stat-ty
