@@ -1,13 +1,16 @@
 ---
 layout: productdetails
-name: Thanks Green
+name: Cardmaking Kit
 shipping_uk_number:
-price_number: 2.75
-slug: thanks-green
-sku: stat-tr
-image: /uploads/img-7315.jpeg
-description_markdown: 'A6. Medium: Cotton paper postcard, comes bagged with kraft paper envelope.'
-permalink: /products/thanks-green/
+price_number: 10
+slug: card-kit
+sku: cardkit
+image: /uploads/img-7320.jpeg
+description_markdown: >-
+  A selection of decorative handmade papers and twines with 3 good quality
+  recycled ivory card blanks and white envelopes. Just add adhesive and
+  imagination\!
+permalink: /products/card-kit/
 category: Stationery
 _options:
   main_image_path:
