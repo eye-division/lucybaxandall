@@ -5,8 +5,8 @@ shipping_uk_number: 2
 price_number: 2.75
 slug: thanks-red
 sku: stat-tr
-image: /assets/images/5336ad493a726.jpg
-description_markdown: 'A6 Medium: Denim paper, pigmented cotton paper'
+image: /uploads/img-7315.jpeg
+description_markdown: 'A6. Medium: Cotton paper postcard, comes bagged with kraft paper envelope.'
 permalink: /products/thanks-red/
 category: Stationery
 _options:
