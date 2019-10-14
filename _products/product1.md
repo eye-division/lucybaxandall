@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Thanks Green
-shipping_uk_number: 2
+shipping_uk_number:
 price_number: 2.75
 slug: thanks-green
 sku: stat-tr
