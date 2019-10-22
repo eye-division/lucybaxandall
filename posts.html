@@ -8,11 +8,22 @@ frontpage: false
 description_markdown:
 frontpagetitle:
 _options:
-  main_image_path:
+  layout:
+    hidden: true
+  image_path:
+    uploads_dir: "assets/images/:year"
     width: 1200
     height: 1200
-    resize_style: "contain"
-    mime_type: "image/jpeg"
+    resize_style: contain
+    mime_type: image/jpeg
+  main_image_path:
+    uploads_dir: "assets/images/:year"
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+  content:
+    uploads_dir: "assets/:year"
 ---
  <div class="editable">
   <p>Regular studio updates, pictures and news are now on Facebook at <a href="http://www.facebook.com/lucybaxandallpaperwoman">Lucy Baxandall Paperwoman</a> (it's a public page so you don't need a Facebook account to view it, only if you want to like, comment or share). I also post frequent updates on Twitter as <a href="https://twitter.com/LucyPaperBax">@LucyPaperBax</a> and <a href="https://www.instagram.com/lucypaperbax/">Instagram as Lucypaperbax</a>, so feel free to follow.</p>

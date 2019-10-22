@@ -2,17 +2,38 @@
 layout: page
 title: Contact
 main_image_path:
+main_image_caption:
 permalink: /contact/
+display_title: true
 frontpage: false
 description_markdown:
 frontpagetitle:
 image_caption:
 _options:
-  main_image_path:
+  layout:
+    hidden: true
+  image_path:
+    uploads_dir: "assets/images/:year"
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
+  main_image_path:
+    uploads_dir: "assets/images/:year"
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+  content:
+    uploads_dir: "assets/:year"
+_comments:
+  title: Page title
+  main_image_path: Image used to represent your page
+  frontpage: Show this page on the homepage
+  homepage_description_markdown: Text used on homepage if shown
+  display_title: Show page title
+  frontpagetitle: Alternative title for home page use
+  images: Add and edit images here
 ---
 <div class="editable">
 
@@ -21,20 +42,20 @@ _options:
 
 <fieldset>
 
-      <input type="hidden" name="_to" value="lucybax@yahoo.com">
+      <input type="hidden" name="_to" value="{{ site.email }}">
       <input type="hidden" name="_cc" value="a.ward@eyedivision.com">
       <input type="hidden" name="_subject" value="Web form">
       <p>
       <label for="name">Name:</label>
-      <input type="text" name="name">
+      <input type="text" name="name" id="name">
       </p>
       <p>
       <label for="_replyto">Email:</label>
-      <input type="text" name="_replyto">
+      <input type="email" name="_replyto" id="_replyto">
       </p>
       <p>
-      <label>Message</label>
-      <textarea name="message"></textarea>
+     <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
       </p>
       {% if site.recaptcha_site_key %}
       <div class="g-recaptcha" data-sitekey="{{ site.recaptcha_site_key }}"></div>

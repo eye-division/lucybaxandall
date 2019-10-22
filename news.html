@@ -2,18 +2,37 @@
 layout: page
 title: Tidekettle News
 main_image_path: /uploads/img-2961.jpg
-image_caption:
+main_image_caption:
 permalink: /news/
+display_title: true
 frontpage: false
 description_markdown:
 frontpagetitle:
 _options:
-  main_image_path:
+  layout:
+    hidden: true
+  image_path:
+    uploads_dir: "assets/images/:year"
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
-    correct_orientation: true
+  main_image_path:
+    uploads_dir: "assets/images/:year"
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+  content:
+    uploads_dir: "assets/:year"
+_comments:
+  title: Page title
+  main_image_path: Image used to represent your page
+  frontpage: Show this page on the homepage
+  homepage_description_markdown: Text used on homepage if shown
+  display_title: Show page title
+  frontpagetitle: Alternative title for home page use
+  images: Add and edit images here
 ---
 
 <section class="blog">
@@ -39,7 +58,7 @@ _options:
           <a href="cloudcannon:collections/{{ post.path }}" class="editor-link">Edit post</a>
         </div>
         <p></p>
-        
+
       {% endfor %}
   </section>
 

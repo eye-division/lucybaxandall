@@ -2,8 +2,9 @@
 layout: page
 title: CV
 main_image_path:
-image_caption:
+main_image_caption:
 permalink: /cv/
+display_title: true
 frontpage: true
 description_markdown: >-
   Lucy Baxandall is a papermaker and book artist based at Kingsgate Workshops
@@ -12,15 +13,33 @@ description_markdown: >-
   the USA.
 frontpagetitle: About
 _options:
-  main_image_path:
+  layout:
+    hidden: true
+  image_path:
+    uploads_dir: "assets/images/:year"
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
+  main_image_path:
+    uploads_dir: "assets/images/:year"
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+  content:
+    uploads_dir: "assets/:year"
+comments:
+  title: Page title
+  main_image_path: Image used to represent your page
+  frontpage: Show this page on the homepage
+  homepage_description_markdown: Text used on homepage if shown
+  display_title: Show page title
+  frontpagetitle: Alternative title for home page use
+  images: Add and edit images here
 ---
 
 <div class="editable">
-      <p>&nbsp;</p>
       <p><b>Lucy Baxandall</b> is a papermaker and book artist based in Berwick-upon-Tweed, Northumberland, and in London. She has worked as a financial journalist, jewellery designer/maker, translator and teacher of French, German and art in the UK and the USA.</p>
       <p>From 2008 to 2010, she was artist in residence at John Mason School in Abingdon, Oxfordshire, and remained at JMS as an art teacher until 2011.</p>
       <p>After returning to London from Oxford, she taught at the London Centre for Book Arts, and now teaches 2D and 3D papermaking at Morley College and West Dean College. She also runs papermaking and book arts workshops for groups and individuals at her studio in Berwick and around the UK, and occasionally translates for academic publications.</p>

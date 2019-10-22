@@ -1,0 +1,166 @@
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+    z-index: 99; // to cover over flexslider
+}
+
+/// Nav menu
+.navigation--wrapper {
+    position: relative;
+    background-color: $white;
+}
+
+/// small view
+.navigation--menu-button {
+    display: block;
+    float: right;
+    margin: 0;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    color: $lucyb-green;
+    text-decoration: none;
+    .icon-menu {
+        fill : $lucyb-green;
+    }
+    &:link {
+        color: $lucyb-green;
+        text-decoration: none;
+    }
+    &:hover, &:active {
+        text-decoration: none;
+        color: tint($lucyb-green,20%);
+        /// menu icon
+        .icon-menu {
+            fill : tint($lucyb-green,20%);
+        }
+    }
+    @include grid-media ($small) {
+        display: none;
+    }
+}
+.menu--title {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+nav {
+    @include grid-media ($small) {
+        //float: none;
+        //line-height: 1.5em;
+    }
+}
+
+.navigation--menu {
+    clear: both;
+    text-align: center;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    &.show {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include grid-media ($small) {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center; // space-around;
+    }
+
+}
+
+/// Nav items
+// menu icon for cart
+.icon-cart {
+  fill: $snipcart;
+  width: 24px;
+  height: 24px;
+}
+.nav--link {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 0.25em 0;
+    @include grid-media ($small) {
+        background: transparent;
+        display: inline;
+        text-decoration: none;
+        width: auto;
+    }
+    a {
+        text-decoration: none;
+        color: $navigation-color;
+        display: inline-block;
+        padding: 0.5em;
+        @include grid-media ($small) {
+            //padding-right: 1.5em;
+        }
+        &:hover {
+            background-color: lighten($lucyb-green,5%);
+            color: $white;
+            text-decoration: none;
+            .icon-cart {
+              fill: darken($snipcart,10%);
+            }
+        }
+        &.snipcart-checkout {
+            background-color: transparent;
+            color: $lucyb-green;
+        }
+    }
+
+    &:last-child a {
+        @include grid-media ($small) {
+            padding-right: 1em;
+        }
+    }
+    &.active a {
+        a {
+            color: $action-hover-color
+        }
+    }
+}
+
+.navigation--social-menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center; // space-around;
+    margin: 0 auto;
+}
+
+.nav--social-media-link {
+    a {
+        padding-right: 0;
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    flex: 1 1 0;
+    @include grid-media ($small) {
+        flex: 0 1 auto;
+    }
+}
+
+li.nav-link.active,
+li.active {
+    a {
+        background-color: $lucyb-green;
+        color: $action-hover-color
+    }
+}
+
+.show--menu {
+  display: block;
+}
+
+/// layout things
+
+
+
+/// grid css navigation--menu ?? not required really

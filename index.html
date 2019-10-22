@@ -19,16 +19,25 @@ carousel:
   - image:
     caption:
     link:
-frontpage: false
 description_markdown:
 frontpagetitle:
 _options:
-  image:
+  layout:
+    hidden: true
+  image_path:
+    uploads_dir: "assets/images/:year"
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
-    correct_orientation: true
+  main_image_path:
+    uploads_dir: "assets/images/:year"
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+  content:
+    uploads_dir: "assets/:year"
 _comments:
   carousel: Edit the slideshow
   link: Optional web link from the slide
@@ -42,16 +51,17 @@ _comments:
     {% for section in site.pages %}
 
       {% if section.frontpage %}
+
         {% if section.main_image_path %}
-          <section class="gallery-cover has-cover" style="background-image: url({{ section.main_image_path }});">
+          <section class="gallery--cover has--cover" style="background-image: url({{ section.main_image_path }});">
         {% else %}
-          <section class="gallery-cover has-cover" style="background-image: url('/assets/header.jpg');">
+          <section class="gallery--cover has--cover" style="background-image: url('/assets/header.jpg');">
         {% endif %}
           <a href="{{ section.url | prepend: site.baseurl }}">
-            <div class="scrim has-cover">
-            <article class="gallery">
-              <header class="gallery-header">
-                <h2 class="title">{{ section.frontpagetitle }}</h2>
+            <div class="scrim has--cover">
+            <article class="gallery--front">
+              <header class="gallery--header">
+                <h2 class="cover--title mb0">{{ section.frontpagetitle }}</h2>
               </header>
               {% if section.description_markdown %}
                 <p>{{ section.description_markdown | markdownify }}<br />
@@ -70,12 +80,15 @@ _comments:
 <!-- now galleries -->
 
     {% for gallery in site.work %}
-      <section class="gallery-cover {% if gallery.main_image_path %}has-cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+
+      <section class="gallery--cover {% if gallery.main_image_path %}has--cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+
         <a href="{{ gallery.url }}">
-          <div class="scrim {% if gallery.main_image_path %}has-cover{% endif %}">
-          <article class="gallery">
-            <header class="gallery-header">
-              <h2 class="title">{{ gallery.title }}</h2>
+
+          <div class="scrim {% if gallery.main_image_path %}has--cover{% endif %}">
+          <article class="gallery--front">
+            <header class="gallery--header">
+              <h2 class="cover--title mv0">{{ gallery.title }}</h2>
             </header>
             {% if gallery.homepage_markdown %}
               <p>{{ gallery.homepage_markdown | markdownify }}</p>
@@ -85,6 +98,5 @@ _comments:
       </a>
     </section>
     {% endfor %}
-
 
 </section>
