@@ -6,7 +6,8 @@ price_number:
 slug: 
 sku: 
 main_image_path: 
-description: ''
+description_markdown: ''
+permalink:
 category: 
 _options:
   main_image_path:

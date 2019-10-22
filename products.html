@@ -6,16 +6,36 @@ frontpage: true
 description_markdown: 'Choose from a range of hand-made stationery, tabletop ware, papers and books'
 frontpagetitle: Shop
 main_image_path: /assets/shop.jpg
-image_caption:
+main_image_caption:
 _options:
-  main_image_path:
+  layout:
+    hidden: true
+  image_path:
+    uploads_dir: "assets/images/:year"
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
+  main_image_path:
+    uploads_dir: "assets/images/:year"
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+  content:
+    uploads_dir: "assets/:year"
+_comments:
+  title: Page title
+  main_image_path: Image used to represent your page
+  frontpage: Show this page on the homepage
+  homepage_description_markdown: Text used on homepage if shown
+  display_title: Show page title
+  frontpagetitle: Alternative title for home page use
+  images: Add and edit images here
 ---
 
 <div class="editable">
+      <p>Welcome to the Tidekettle online shop! We'll be adding more products over the coming months. There is a larger selection of papers at the Berwick shop so do get in touch if you would like to know more.</p>
       <h2>Stationery</h2>
       <p>Handmade paper notecards (postcard style) for all occasions, created with recycled denim and other interesting fibres. Designed to be personalised by the sender. Design your own stamp, fill the pages of a book, use the back for greetings.</p>
       <h2>Tabletop</h2>
@@ -23,43 +43,47 @@ _options:
       <h2>Papers</h2>
       <p>The papers for sale here are limited editions, with the fibres harvested, cooked, beaten and the sheets handmade in small batches. Generous A4 size unless otherwise stated. They can be used for printmaking, collage, letter writing and making books. All are internally sized and most are inkjet printable at your own risk - single sheet feeding recommended! &nbsp;While making no archival claims, we pH test at each stage to ensure all paper is the right side of neutral. We use cotton, linen and abaca base pulps along with seasonal plant materials and other intriguing inclusions. Prices per sheet unless specified.</p>
       <h2>Books</h2>
-      <p>Refillable notebooks with handmade paper covers. &nbsp;Wall pieces currently available are individually priced in their sections in the 'Work' category.&nbsp;&nbsp;</p>
+      <p>Refillable notebooks with handmade paper covers. &nbsp;Wall pieces and artist's books currently available are individually priced in their sections on the WORK pages.&nbsp;</p>
     </div>
 
-{% for product in site.products %}
+    <section class="gallery--list">
 
-  <div class="product gallery-box {% cycle 'alpha', '', 'last' %}">
+    {% for product in site.products %}
 
-	  <a href="{{ site.baseurl }}{{ product.url }}">
-	    {% include img.html src=product.image width=300 height=300 fit=crop alt=product.name %}
+      <div class="gallery--box">
 
-	    <p>{{ product.name }}</p>
-    </a>
+    	  <a href="{{ site.baseurl }}{{ product.url }}">
+    	    {% include img.html src=product.image width=300 height=300 fit=crop alt=product.name %}
 
-    {% if product.category %}<p>Category: {{ product.category }}</p>{% endif %}
+    	    <p>{{ product.name }}</p>
+        </a>
 
-    <form class="cart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="addCart">
-      <fieldset>
-        <p><strong>Price:</strong> &pound;{{ product.price_number }}</p>
-        <input type="hidden" name="cmd" value="_cart" />
-        <input type="hidden" name="add" value="1" />
-        <input type="hidden" name="charset" value="utf-8" />
-        <input type="hidden" name="business" value="{{ site.paypal_id }}" />
-        <input type="hidden" name="lc" value="GB" />
-        <input type="hidden" name="item_name" value="{{ product.name }}" />
-        <input type="hidden" name="item_number" value="{{ product.sku }}" />
-        <input type="hidden" name="amount" value="{{ product.price_number }}" />
-        <input type="hidden" name="currency_code" value="GBP" />
-        <input type="hidden" name="button_subtype" value="products" />
-        <input type="hidden" name="shopping_url" value="{{ site.appurl[jekyll.environment]}}{{ page.url }}" />
-        <input type="hidden" name="no_shipping" value="2" />
-        <input type="hidden" name="bn" value="PP-ShopCartBF:Btn2_EN_addtocart.gif:NonHosted" />
-        <input type="submit" value="Add to cart" class="paypal-add-item" />
+        {% if product.category %}<p>Category: {{ product.category }}</p>{% endif %}
 
-      </fieldset>
-    </form>
+        <form class="cart" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="addCart">
+          <fieldset>
+            <p><strong>Price:</strong> &pound;{{ product.price_number }}</p>
+            <input type="hidden" name="cmd" value="_cart" />
+            <input type="hidden" name="add" value="1" />
+            <input type="hidden" name="charset" value="utf-8" />
+            <input type="hidden" name="business" value="{{ site.paypal_id }}" />
+            <input type="hidden" name="lc" value="GB" />
+            <input type="hidden" name="item_name" value="{{ product.name }}" />
+            <input type="hidden" name="item_number" value="{{ product.sku }}" />
+            <input type="hidden" name="amount" value="{{ product.price_number }}" />
+            <input type="hidden" name="currency_code" value="GBP" />
+            <input type="hidden" name="button_subtype" value="products" />
+            <input type="hidden" name="shopping_url" value="{{ site.appurl[jekyll.environment]}}{{ page.url }}" />
+            <input type="hidden" name="no_shipping" value="2" />
+            <input type="hidden" name="bn" value="PP-ShopCartBF:Btn2_EN_addtocart.gif:NonHosted" />
+            <input type="submit" value="Add to cart" class="paypal-add-item" />
+
+          </fieldset>
+        </form>
 
 
-  </div>
+      </div>
 
-{% endfor %}
+    {% endfor %}
+
+  </section>

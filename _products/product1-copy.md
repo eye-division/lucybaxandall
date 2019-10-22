@@ -1,12 +1,16 @@
 ---
 layout: productdetails
-name: Warmest Wishes Card
-shipping_uk_number: 2
-price_number: 2.75
-slug: warmest-wishes
-sku: warmestwishes
-image: /uploads/img-3199.jpg
-description: 'A6 Medium: Denim paper, white and pigmented cotton paper'
+name: Cardmaking Kit
+shipping_uk_number:
+price_number: 10
+slug: card-kit
+sku: cardkit
+image: /uploads/img-7320.jpeg
+description_markdown: >-
+  A selection of decorative handmade papers and twines with 3 good quality
+  recycled ivory card blanks and white envelopes. Just add adhesive and
+  imagination\!
+permalink: /products/card-kit/
 category: Stationery
 _options:
   main_image_path:
@@ -19,8 +23,5 @@ _comments:
   price_number: Digits only
   sku: Your own unique product reference
   main_image_path: Upload an image
-  category:
+  category: i.e. tableware
 ---
-Low tech THX. Postcard, blank on back, bagged with kraft paper envelope  
-A6  
-Medium: Denim paper, recycled paper

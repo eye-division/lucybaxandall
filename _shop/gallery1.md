@@ -4,6 +4,10 @@ description_markdown: "Handmade paper notecards (postcard style) for all occasio
 _gallery_date: 2016-05-01 00:00:00
 permalink: /shop/stationery/
 main_image_path: /assets/images/5336ad493a726.jpg
+main_image_caption:
+display_title: true
+display_image: false
+thumb_crop: true
 images:
   - image_path: /assets/images/5336ad493a726.jpg
     image_title: Thanks Red
@@ -12,22 +16,30 @@ images:
     Low tech THX. Postcard, blank on back, bagged with kraft paper envelope."
     image_price: 2.75
   
-display_title: false
+display_thumb_title: false
 _options:
   image_path:
+    uploads_dir: "assets/images/:year"
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
   main_image_path:
+    uploads_dir: "assets/images/:year"
     width: 1200
     height: 800
     resize_style: contain
     mime_type: image/jpeg
+  content:
+    uploads_dir: "assets/:year"
 _comments:
   title: Gallery title
-  permalink: Be careful editing this
+  permalink: Edit the web address here - letters and hyphen only
+  display_image: Show featured image at the top of the gallery
+  display_title: Show the title at the top of the gallery
+  display_thumb_title: Show titles with image thumbnails 
   main_image_path: Image used to represent your gallery
   images: Add and edit your gallery images here
-  image_description: May only be used in the close up of an image
+  image_description: Usually only shown in the image close up
+  thumb_crop: Crop thumbnail images to a consistent size
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: Papermaking classes
 main_image_path: /assets/classes.jpg
-image_caption: An al fresco class at Kingsgate Workshops in London.
+main_image_caption: An al fresco class at Kingsgate Workshops in London.
 permalink: /papermaking-classes/
 frontpage: true
 description_markdown: >-
@@ -11,11 +11,30 @@ description_markdown: >-
   ages
 frontpagetitle: Papermaking classes
 _options:
-  main_image_path:
-    width: '1200'
-    height: '1200'
+  layout:
+    hidden: true
+  image_path:
+    uploads_dir: "assets/images/:year"
+    width: 1200
+    height: 1200
     resize_style: contain
     mime_type: image/jpeg
+  main_image_path:
+    uploads_dir: "assets/images/:year"
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+  content:
+    uploads_dir: "assets/:year"
+_comments:
+  title: Page title
+  main_image_path: Image used to represent your page
+  frontpage: Show this page on the homepage
+  homepage_description_markdown: Text used on homepage if shown
+  display_title: Show page title
+  frontpagetitle: Alternative title for home page use
+  images: Add and edit images here
 ---
 
 <div class="editable">
