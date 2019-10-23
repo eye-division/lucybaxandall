@@ -54,8 +54,8 @@ layout: default
 
               {% if page.thumb_crop %}
 
-                <!-- cropped square images -->
-                {% include img.html src=image width=200 height=200 fit=crop alt=thisimage.image_title %}
+                <!-- cropped square images - using aspect ratio 1:1 -->
+                <img src="{{site.imagecdn[jekyll.environment]}}{{ image }}?fit=crop&width=400&ar=1%3A1&crop=focalpoint&auto=format" alt="{{ thisimage.image_title }}" data-sizes="auto" width="400" class="lazyload"/>
                 <!-- end cropped square -->
 
               {% else %}
