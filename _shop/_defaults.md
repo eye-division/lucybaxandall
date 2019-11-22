@@ -1,6 +1,7 @@
 ---
 title: 
 description_markdown: 
+description:
 _gallery_date: 
 permalink:
 main_image_path:
@@ -32,6 +33,7 @@ display_thumb_title: true
 
 _comments:
   title: Gallery title
+  description: SEO one paragraph description for web search. This won't appear in your page
   permalink: Edit the web address here - letters and hyphen only
   display_image: Show featured image at the top of the gallery
   display_title: Show the title at the top of the gallery
