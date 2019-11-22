@@ -2,7 +2,9 @@
 title: Artists' books
 description_markdown:
 homepage_markdown:
-description:
+description: >-
+  A variety of artists' books created by Lucy Baxandall from 2009 to the present
+  day.
 _gallery_date: 2016-05-01 00:00:00
 permalink: /work/artists-books/
 main_image_path: /assets/books.jpg
