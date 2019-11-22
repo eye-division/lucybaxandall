@@ -1,6 +1,7 @@
 ---
 title: Stationery
 description_markdown: "Handmade paper notecards (postcard style) for all occasions, created with recycled denim and other interesting fibres. Designed to be personalised by the sender. Design your own stamp, fill the pages of a book, use the back for greetings."
+description:
 _gallery_date: 2016-05-01 00:00:00
 permalink: /shop/stationery/
 main_image_path: /assets/images/5336ad493a726.jpg
@@ -34,6 +35,7 @@ _options:
     uploads_dir: "assets/:year"
 _comments:
   title: Gallery title
+  description: SEO one paragraph description for web search. This won't appear in your page
   permalink: Edit the web address here - letters and hyphen only
   display_image: Show featured image at the top of the gallery
   display_title: Show the title at the top of the gallery

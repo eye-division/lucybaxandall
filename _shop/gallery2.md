@@ -1,6 +1,7 @@
 ---
 title: Tabletop
 description_markdown: "Absorbent art? Porous poetry? Cutting edge coasters? It's up to you what you use these for, but they'll certainly start conversations among your guests. All pieces are on cotton paper handmade in our studio, handprinted with our own text using the linocut technique. Do get in touch through the contact page if you are interested in custom orders for special occasions."
+description:
 _gallery_date: 2016-05-01 00:00:00
 permalink: /shop/tabletop/
 main_image_path: /assets/images/5332f801a5cfd.jpg
@@ -34,6 +35,7 @@ _options:
     uploads_dir: "assets/:year"
 _comments:
   title: Gallery title
+  description: SEO one paragraph description for web search. This won't appear in your page
   permalink: Edit the web address here - letters and hyphen only
   display_image: Show featured image at the top of the gallery
   display_title: Show the title at the top of the gallery

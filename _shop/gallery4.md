@@ -1,6 +1,7 @@
 ---
 title: Books
 description_markdown: "Refillable notebooks with handmade paper covers that you will not find anywhere else. Sushi books for quiet moments. Wall pieces currently available are individually priced in their sections in the 'Work' category. Please do contact us if you would like a higher resolution image, or a complete image where only a detail is shown. Studio visits welcome by appointment."
+description:
 _gallery_date: 2016-05-01 00:00:00
 permalink: /shop/books/
 main_image_path: /assets/images/5333040ec910d.jpg
@@ -34,6 +35,7 @@ _options:
     uploads_dir: "assets/:year"
 _comments:
   title: Gallery title
+  description: SEO one paragraph description for web search. This won't appear in your page
   permalink: Edit the web address here - letters and hyphen only
   display_image: Show featured image at the top of the gallery
   display_title: Show the title at the top of the gallery

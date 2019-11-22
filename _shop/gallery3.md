@@ -1,6 +1,7 @@
 ---
 title: Papers
 description_markdown: "The papers for sale here are limited editions, with the fibres harvested, cooked, beaten and the sheets handmade in small batches. Generous A4 size. They can be used for printmaking, collage, writing beautiful letters and making books. All are tub-sized and most are inkjet printable AT YOUR OWN RISK! While making no archival claims, we pH test at each stage to ensure all paper is the right side of neutral. We use cotton, linen and abaca base pulps along with seasonal plant materials and other intriguing inclusions. Prices per sheet unless specified."
+description:
 _gallery_date: 2016-05-01 00:00:00
 permalink: /shop/papers/
 main_image_path: /assets/images/53355e70207af.jpg
@@ -33,6 +34,7 @@ _options:
     uploads_dir: "assets/:year"
 _comments:
   title: Gallery title
+  description: SEO one paragraph description for web search. This won't appear in your page
   permalink: Edit the web address here - letters and hyphen only
   display_image: Show featured image at the top of the gallery
   display_title: Show the title at the top of the gallery
