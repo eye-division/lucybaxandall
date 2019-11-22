@@ -2,6 +2,7 @@
 title: Installation
 description_markdown:   
 homepage_markdown: 
+description:
 _gallery_date: 2016-05-01 00:00:00
 permalink: /work/installation/
 main_image_path: /assets/installation.jpg
@@ -78,6 +79,7 @@ _options:
     uploads_dir: "assets/:year"
 _comments:
   title: Gallery title
+  description: SEO one paragraph description for web search. This won't appear in your page
   permalink: Edit the web address here - letters and hyphen only
   display_image: Show featured image at the top of the gallery
   display_title: Show the title at the top of the gallery
