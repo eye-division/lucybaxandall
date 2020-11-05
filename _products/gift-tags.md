@@ -11,7 +11,7 @@ description_markdown: >-
   string. They look great on sustainable brown paper-wrapped gifts\! Packaged in
   biodegradable cellophane.
 permalink: /products/gifttags/
-category: Papers
+category: Stationery
 _options:
   main_image_path:
     width: 1200
