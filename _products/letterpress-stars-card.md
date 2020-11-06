@@ -7,8 +7,8 @@ slug: stars-card
 sku: stars-card
 image: /uploads/img-0952.jpeg
 description_markdown: >-
-  A6. Letterpress on handmade paper, on a recycled blank card. Comes bagged with
-  envelope.
+  A6. Letterpress on handmade paper, on a recycled blank card. Paper colours may
+  vary. Comes bagged with envelope.
 permalink: /products/stars-card/
 category: Stationery
 _options:
