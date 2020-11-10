@@ -10,7 +10,7 @@ description_markdown: >-
   A small softback notebook with a Japanese-style stab binding. Strong flax
   paper cover. Pages are assorted handmade papers suitable for all media. 10.5cm
   x 14cm.
-permalink: /products/stab-boundsmall/
+permalink: /products/stab-bound-small/
 category: Stationery
 _options:
   main_image_path:
