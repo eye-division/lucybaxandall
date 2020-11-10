@@ -1,17 +1,17 @@
 ---
 layout: productdetails
-name: Stab-bound Notebook
+name: Little Bag o' Trees
 shipping_uk_number: 2
-price_number: 7.5
-slug: stab-bound-small
-sku: stab-bounds
-image: /uploads/img-0929.jpeg
+price_number: 2
+slug: little-trees
+sku: sixtrees
+image: /uploads/img-1004.jpeg
 description_markdown: >-
-  A small softback notebook with a Japanese-style stab binding. Strong flax
-  paper cover. Pages are assorted handmade papers suitable for all media. 10.5cm
-  x 14cm.
-permalink: /products/stab-bound-small/
-category: Stationery
+  6 little pine trees to spark the imagination.&nbsp; Collage, journalling,
+  cardmaking, all sorts of possibilities. Handmade cotton paper. Trees are about
+  12cm high. Biodegradable cellophane bag.
+permalink: /products/six-houses/
+category: Papers
 _options:
   main_image_path:
     width: 1200
