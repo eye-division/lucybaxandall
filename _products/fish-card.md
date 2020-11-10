@@ -9,7 +9,7 @@ image: /uploads/img-0886.jpeg
 description_markdown: >-
   A6. Screen printed from a linocut original onto handmade paper, on a recycled
   blank card. Comes bagged with envelope.
-permalink: /products/thanks-green/
+permalink: /products/fish-card/
 category: Stationery
 _options:
   main_image_path:
