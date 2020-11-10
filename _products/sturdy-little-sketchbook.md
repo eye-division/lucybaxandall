@@ -10,7 +10,7 @@ description_markdown: >-
   A softback pamphlet-bound notebook. Strong flax paper cover. Pages are
   assorted handmade papers suitable for all media. Slightly smaller than A5, 12
   leaves (24 sides).
-permalink: /products/stab-boundsmall/
+permalink: /products/sturdy-skbk/
 category: Stationery
 _options:
   main_image_path:

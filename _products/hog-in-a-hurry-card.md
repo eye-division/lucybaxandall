@@ -9,7 +9,7 @@ image: /uploads/img-0890.jpeg
 description_markdown: >-
   A6. Linocut on handmade paper, on a recycled blank card. Comes bagged with
   envelope.
-permalink: /products/thanks-green/
+permalink: /products/hog-card/
 category: Stationery
 _options:
   main_image_path:
