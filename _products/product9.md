@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: A4 Paper Selection
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 10
 slug: paper-selection
 sku: pp-select
