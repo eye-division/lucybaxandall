@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: A Dozen Stars
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 12
 slug: dozen-stars
 sku: starstring
