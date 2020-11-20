@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Abaca and Clematis Star
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 7.5
 slug: clematis-star
 sku: twigstar
