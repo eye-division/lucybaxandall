@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Gift Tags
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 3
 slug: gift-tags
 sku: pp-gifttags
