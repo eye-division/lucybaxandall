@@ -10,7 +10,7 @@ description_markdown: >-
   A6. Cotton paper, recycled paper. Pulp painted and hand printed. Berwick has
   great coffee so there are coffee grounds in the bridge paper\! Comes bagged
   with a kraft paper envelope.
-permalink: /products/dyo-stamp-card/
+permalink: /products/berwick-postcard/
 category: Stationery
 _options:
   main_image_path:
