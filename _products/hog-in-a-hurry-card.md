@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Hog in a Hurry Card
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 3.5
 slug: hog-card
 sku: hog-card
