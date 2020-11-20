@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Little Bag o' Fishes
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 3
 slug: little-fishes
 sku: sixfishes
