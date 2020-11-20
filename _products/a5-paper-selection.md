@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: A5 Paper Selection
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 6
 slug: paper-selectionA5
 sku: pp-select
