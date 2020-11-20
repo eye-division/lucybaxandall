@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Sturdy Little Sketchbook
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 8
 slug: sturdy-skbk
 sku: sturdy-skbk

@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Little Bag o' Trees
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 2
 slug: little-trees
 sku: sixtrees

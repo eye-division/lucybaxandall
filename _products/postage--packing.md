@@ -1,16 +1,19 @@
 ---
 layout: productdetails
-name: Letterpress Stars Card
-shipping_uk_number: 0
-price_number: 3.5
-slug: stars-card
-sku: stars-card
-image: /uploads/img-0952.jpeg
+name: POSTAGE & PACKING
+shipping_uk_number:
+price_number: 2
+slug: p&p
+sku: p&p
+image: /uploads/img-5860.jpeg
 description_markdown: >-
-  A6. Letterpress on handmade paper, on a recycled blank card. Paper colours may
-  vary. Comes bagged with envelope.
-permalink: /products/stars-card/
-category: Stationery
+  Postage and packing &pound;2.00 for all orders in the UK. For international
+  shipping please send us a message on the contact page.
+
+
+  &nbsp;
+permalink: /products/postage-packing/
+category: Papers
 _options:
   main_image_path:
     width: 1200
@@ -24,3 +27,4 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+

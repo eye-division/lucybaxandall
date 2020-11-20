@@ -1,15 +1,16 @@
 ---
 layout: productdetails
-name: Letterpress Stars Card
-shipping_uk_number: 0
-price_number: 3.5
-slug: stars-card
-sku: stars-card
-image: /uploads/img-0952.jpeg
+name: Berwick Postcard
+shipping_uk_number:
+price_number: 3
+slug: berwick-postcard
+sku: bwk-postcard
+image: /uploads/img-1054.jpeg
 description_markdown: >-
-  A6. Letterpress on handmade paper, on a recycled blank card. Paper colours may
-  vary. Comes bagged with envelope.
-permalink: /products/stars-card/
+  A6. Cotton paper, recycled paper. Pulp painted and hand printed. Berwick has
+  great coffee so there are coffee grounds in the bridge paper\! Comes bagged
+  with a kraft paper envelope.
+permalink: /products/berwick-postcard/
 category: Stationery
 _options:
   main_image_path:

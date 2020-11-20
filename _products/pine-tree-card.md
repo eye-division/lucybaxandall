@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Pine Tree Card
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 3.5
 slug: pine-card
 sku: pine-card

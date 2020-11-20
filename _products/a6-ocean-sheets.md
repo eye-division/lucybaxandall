@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: A6 Ocean Sheets
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 5
 slug: oceanselectionA6
 sku: pp-oceanA6

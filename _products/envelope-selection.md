@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Envelope Selection
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 6
 slug: env-selectionA6
 sku: env-selectA6

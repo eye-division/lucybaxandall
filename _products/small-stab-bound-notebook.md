@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Small stab-bound notebook
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 7.5
 slug: small-stab-bound
 sku: small-stab

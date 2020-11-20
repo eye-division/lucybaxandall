@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: A5 Abaca Seaweed Paper
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 1
 slug: abaca-seaweedA5
 sku: ab-seaweedA5

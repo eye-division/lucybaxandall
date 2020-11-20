@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Cardmaking Kit
-shipping_uk_number:
+shipping_uk_number: 0
 price_number: 10
 slug: card-kit
 sku: cardkit
