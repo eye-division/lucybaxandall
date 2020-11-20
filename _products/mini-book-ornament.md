@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Mini Book Ornament
-shipping_uk_number: 2
+shipping_uk_number: 0
 price_number: 3
 slug: mini-book-xmas
 sku: mini-xmas-book
