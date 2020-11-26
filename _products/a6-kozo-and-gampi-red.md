@@ -9,8 +9,8 @@ image: /uploads/img-1156.jpeg
 description_markdown: >-
   These little A6 sheets are made from a mix of lightly pigmented kozo and gampi
   fibres with kozo bark flecks and festive red and white cotton thread. They are
-  translucent and lovely for collage and layering. A bit of a one off so get
-  them before they disappear\!
+  translucent and lovely for collage and layering. A bit of a one off and a snip
+  at 75p each so get them before they disappear\!
 permalink: /products/kozo-gampi-redA6/
 category: Papers
 _options:
