@@ -2,7 +2,7 @@
 layout: productdetails
 name: Small stab-bound notebook
 shipping_uk_number: 0
-price_number: 7.5
+price_number: 10
 slug: small-stab-bound
 sku: small-stab
 image: /uploads/img-0929-1.jpeg
@@ -25,4 +25,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
 
