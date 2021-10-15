@@ -1,6 +1,6 @@
 ---
 layout: productdetails
-name: 6 Little Houses shapes
+name: 6 Little Houses
 shipping_uk_number: 0
 price_number: 3.5
 slug: little-houses
