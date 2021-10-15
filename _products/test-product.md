@@ -5,7 +5,7 @@ shipping_uk_number:
 price_number:
 slug:
 sku:
-main_image_path:
+main_image_path: /uploads/tidekettle.jpg
 description_markdown:
 permalink:
 category:
@@ -22,3 +22,5 @@ _comments:
     main_image_path: Upload an image
     category: i.e. tableware
 ---
+
+
