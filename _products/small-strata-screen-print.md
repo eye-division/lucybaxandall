@@ -8,7 +8,7 @@ sku: small-strata-screen-print
 image: /uploads/IMG_9847.JPG
 description_markdown: Small screen print on handmade paper. 14cm x 14cm.&nbsp;
 permalink: /products/small-strata-screen-print
-category: Papers
+category:
 _options:
     main_image_path:
         width: 1200
@@ -22,3 +22,5 @@ _comments:
     main_image_path: Upload an image
     category: i.e. tableware
 ---
+
+
