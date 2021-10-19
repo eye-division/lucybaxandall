@@ -5,7 +5,7 @@ shipping_uk_number:
 price_number: 3.5
 slug: berwick-postcard
 sku: bwk-postcard
-image: /uploads/img-1054.jpeg
+image: /uploads/Screenshot-2021-10-19-at-13.53.39.png
 description_markdown: >-
   A6. Cotton paper, recycled paper. Pulp painted and hand printed. Berwick has
   great coffee so there are coffee grounds in the bridge paper\! Comes bagged
