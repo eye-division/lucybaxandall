@@ -2,10 +2,10 @@
 layout: productdetails
 name: Thanks Green
 shipping_uk_number: 0
-price_number: 2.75
+price_number: 3.5
 slug: thanks-green
 sku: stat-tr
-image: /uploads/img-7315.jpeg
+image: /uploads/IMG_9813-web.jpeg
 description_markdown: 'A6. Medium: Cotton paper postcard, comes bagged with kraft paper envelope.'
 permalink: /products/thanks-green/
 category: Stationery
@@ -22,3 +22,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
+
