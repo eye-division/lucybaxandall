@@ -6,7 +6,7 @@ price_number: 8
 slug: small-strata-screen-print
 sku: small-strata-screen-print
 image: /uploads/IMG_9847.JPG
-description_markdown: Small screen print on handmade paper. 14cm x 14cm.&nbsp;
+description_markdown: Small screen print on handmade paper. 14cm x 14cm.
 permalink: /products/small-strata-screen-print
 category:
 _options:
