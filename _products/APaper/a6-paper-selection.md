@@ -11,7 +11,7 @@ description_markdown: >-
   seasons. This popular selection of 6 A6 (postcard size) sheets, internally
   sized for use with most art and writing media, includes sheets to give you a
   good overview of our papers made with recycled fabrics, local plants and
-  specialist fibres. Packaging is biodegradable cellophane.
+  specialist fibres. Packaged in biodegradable cellophane.
 permalink: /products/paper-selectionA6/
 category: Papers
 _options:
@@ -27,4 +27,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
 
