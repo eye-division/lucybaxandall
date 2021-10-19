@@ -1,5 +1,5 @@
 ---
-layout: productdetails
+layout: archive
 name: Thanks Blue
 shipping_uk_number:
 price_number: 2.75
@@ -22,3 +22,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
+
