@@ -5,7 +5,7 @@ shipping_uk_number: 0
 price_number: 10
 slug: paper-selection
 sku: pp-select
-image: /assets/images/53355e70207af.jpg
+image: /assets/images/IMG_4816.jpeg
 description_markdown: >-
   Tidekettle papers are made in small batches and stock varies through the
   seasons. This popular selection of 6 A4 sheets, internally sized for use with
@@ -26,4 +26,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
 
