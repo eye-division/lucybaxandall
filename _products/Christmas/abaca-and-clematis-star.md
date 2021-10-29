@@ -10,6 +10,9 @@ description_markdown: >-
   A hanging star made from clematis vine cut in the Tidekettle garden. Dipped in
   translucent abaca fibre for strength and beauty, it looks particularly good in
   a window.
+
+
+  Approx 12cm height.&nbsp;
 permalink: /products/clematis-star-medium/
 category: Papers
 _options:
