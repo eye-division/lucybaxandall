@@ -1,6 +1,6 @@
 ---
 layout: productdetails
-name: Abaca and Clematis Star
+name: Abaca and Clematis Star - Medium
 shipping_uk_number: 0
 price_number: 7.5
 slug: clematis-star
