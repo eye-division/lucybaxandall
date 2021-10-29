@@ -1,6 +1,6 @@
 ---
 layout: productdetails
-name: A6 Paper Selection
+name: Paper Selection - A6
 shipping_uk_number: 0
 price_number: 3.5
 slug: paper-selectionA6
