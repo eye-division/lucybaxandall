@@ -3,14 +3,14 @@ layout: productdetails
 name: Abaca and Clematis Star - Medium
 shipping_uk_number: 0
 price_number: 7.5
-slug: clematis-star
-sku: twigstar
+slug: clematis-star-medium
+sku: clematis-star-medium
 image: /uploads/IMG_9917.jpeg
 description_markdown: >-
   A hanging star made from clematis vine cut in the Tidekettle garden. Dipped in
   translucent abaca fibre for strength and beauty, it looks particularly good in
   a window.
-permalink: /products/clematis-star/
+permalink: /products/clematis-star-medium/
 category: Papers
 _options:
   main_image_path:
