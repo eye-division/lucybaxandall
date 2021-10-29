@@ -3,8 +3,8 @@ layout: productdetails
 name: Paper Selection - A4
 shipping_uk_number: 0
 price_number: 10
-slug: paper-selection
-sku: pp-select
+slug: paper-selection-a4
+sku: pp-select-a4
 image: /uploads/IMG_4819.jpeg
 description_markdown: >-
   Tidekettle papers are made in small batches and stock varies through the
