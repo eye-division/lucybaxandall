@@ -1,6 +1,6 @@
 ---
 layout: productdetails
-name: 'Abaca Star - Large '
+name: 'Abaca and Clematis Star - Large '
 shipping_uk_number: 0
 price_number: 10
 slug: abaca-star-large
@@ -25,3 +25,5 @@ _comments:
     main_image_path: Upload an image
     category: i.e. tableware
 ---
+
+
