@@ -5,7 +5,7 @@ shipping_uk_number: 0
 price_number: 3
 slug: fishing-line-ornament
 sku: fishing-line-ornament
-image: /uploads/IMG_0045.JPG
+image: /uploads/img-0045.JPG
 description_markdown: >-
     A copper hanging ornament made from fishing wire. Dipped in translucent
     abaca fibre for strength and beauty, it looks particularly good in a window.
@@ -27,3 +27,4 @@ _comments:
     main_image_path: Upload an image
     category: i.e. tableware
 ---
+
