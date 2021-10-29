@@ -1,7 +1,7 @@
 ---
 layout: productdetails
 name: Thanks
-shipping_uk_number:
+shipping_uk_number: 0
 price_number: 3.5
 slug: thanks
 sku: thanks
@@ -22,3 +22,5 @@ _comments:
     main_image_path: Upload an image
     category: i.e. tableware
 ---
+
+
