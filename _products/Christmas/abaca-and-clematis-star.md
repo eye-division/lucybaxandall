@@ -5,7 +5,7 @@ shipping_uk_number: 0
 price_number: 7.5
 slug: clematis-star
 sku: twigstar
-image: /uploads/img-0900.jpeg
+image: /uploads/IMG_9917.jpeg
 description_markdown: >-
   A hanging star made from clematis vine cut in the Tidekettle garden. Dipped in
   translucent abaca fibre for strength and beauty, it looks particularly good in
@@ -25,4 +25,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
 
