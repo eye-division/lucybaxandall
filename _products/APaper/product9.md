@@ -1,6 +1,6 @@
 ---
 layout: productdetails
-name: A4 Paper Selection
+name: 'Paper Selection - A4 '
 shipping_uk_number: 0
 price_number: 10
 slug: paper-selection
