@@ -3,8 +3,8 @@ layout: productdetails
 name: Paper Selection - A5
 shipping_uk_number: 0
 price_number: 6
-slug: paper-selectionA5
-sku: pp-select
+slug: paper-selection-A5
+sku: pp-select-A5
 image: /uploads/IMG_4816.jpeg
 description_markdown: >-
   Tidekettle papers are made in small batches and stock varies through the
@@ -12,7 +12,7 @@ description_markdown: >-
   most art and writing media, includes sheets to give you a good overview of our
   papers made with recycled fabrics, local plants and specialist fibres.
   Packaging is biodegradable cellophane.
-permalink: /products/paper-selectionA5/
+permalink: /products/paper-selection-A5/
 category: Papers
 _options:
   main_image_path:
