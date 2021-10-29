@@ -11,7 +11,7 @@ description_markdown: >-
   seasons. This popular selection of 6 A4 sheets, internally sized for use with
   most art and writing media, includes sheets to give you a good overview of our
   papers made with recycled fabrics, local plants and specialist fibres.
-permalink: /products/paper-selection/
+permalink: /products/paper-selection-a4/
 category: Papers
 _options:
   main_image_path:
