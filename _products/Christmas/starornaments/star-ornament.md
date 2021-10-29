@@ -2,7 +2,7 @@
 layout: productdetails
 name: Star Ornament
 shipping_uk_number: 0
-price_number: 12
+price_number: 5
 slug: star-ornament
 sku: starornament
 image: /uploads/IMG_9966.jpeg
@@ -25,3 +25,5 @@ _comments:
     main_image_path: Upload an image
     category: i.e. tableware
 ---
+
+
