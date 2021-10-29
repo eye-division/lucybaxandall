@@ -1,19 +1,18 @@
 ---
 layout: productdetails
-name: 'Abaca and Clematis Star - Large '
+name: Abaca and Gilded Leaf Leaves
 shipping_uk_number: 0
 price_number: 10
-slug: abaca-star-large
-sku: abacastarlarge
-image: /uploads/IMG_9945.jpeg
+slug: abaca-leaves
+sku: abacaleaves
+image: /uploads/IMG_9887.jpeg
 description_markdown: >-
-    A hanging star made from clematis vine cut in the Tidekettle garden. Dipped
-    in translucent abaca fibre for strength and beauty, it looks particularly
-    good in a window.
+    A hanging leaf made from wire and gilding leaf. Dipped in translucent abaca
+    fibre for strength and beauty, it looks particularly good in a window.
 
 
-    Approx 18cm height.
-permalink: /products/abaca-star-large/
+    Approx 11cm height.
+permalink: /products/abaca-leaves/
 category: Papers
 _options:
     main_image_path:
@@ -28,5 +27,3 @@ _comments:
     main_image_path: Upload an image
     category: i.e. tableware
 ---
-
-
