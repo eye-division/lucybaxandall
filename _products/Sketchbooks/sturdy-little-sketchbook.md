@@ -2,7 +2,7 @@
 layout: productdetails
 name: Sturdy Little Sketchbook
 shipping_uk_number: 0
-price_number: 8
+price_number: 12
 slug: sturdy-skbk
 sku: sturdy-skbk
 image: /uploads/img-0932.jpeg
@@ -25,4 +25,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
 
