@@ -5,7 +5,7 @@ shipping_uk_number: 0
 price_number: 3.5
 slug: shapes-selectionA5
 sku: pp-selectshapes
-image: /uploads/img-0883.jpeg
+image: /uploads/img-0566.JPG
 description_markdown: >-
   An assortment of 10 circles, hearts, squares and houses in cotton and recycled
   papers with deckle edges. Colours will vary according to stock. Ideal for
@@ -26,4 +26,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
 
