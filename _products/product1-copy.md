@@ -5,7 +5,7 @@ shipping_uk_number: 0
 price_number: 10
 slug: card-kit
 sku: cardkit
-image: /uploads/img-7320.jpeg
+image: /uploads/img-0772.JPG
 description_markdown: >-
   A selection of decorative handmade papers and twines with 3 good quality
   recycled ivory card blanks and white envelopes. Just add adhesive and
@@ -25,3 +25,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
+
