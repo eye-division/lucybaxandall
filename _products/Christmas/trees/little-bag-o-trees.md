@@ -5,7 +5,7 @@ shipping_uk_number: 0
 price_number: 2
 slug: little-trees
 sku: sixtrees
-image: /uploads/img-1004.jpeg
+image: /uploads/img-0849.JPG
 description_markdown: >-
   6 little pine trees to spark the imagination.&nbsp; Collage, journalling,
   cardmaking, all sorts of possibilities. Handmade cotton paper. Trees are about
@@ -25,4 +25,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
 

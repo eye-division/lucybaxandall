@@ -5,7 +5,7 @@ shipping_uk_number: 0
 price_number: 3
 slug: little-fishes
 sku: sixfishes
-image: /uploads/img-1001.jpeg
+image: /uploads/img-0835.JPG
 description_markdown: >-
   6 handmade paper fish to spark the imagination.&nbsp; Collage, journalling,
   cardmaking, all sorts of possibilities. Fish are 21cm long. Biodegradable
@@ -25,4 +25,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
 
