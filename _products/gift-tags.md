@@ -5,7 +5,7 @@ shipping_uk_number: 0
 price_number: 3
 slug: gift-tags
 sku: pp-gifttags
-image: /uploads/img-0897.jpeg
+image: /uploads/img-0786.JPG
 description_markdown: >-
   Six handmade paper gift tags, plain and printed, on baker's twine and hemp
   string. They look great on sustainable brown paper-wrapped gifts\! Packaged in
@@ -25,4 +25,5 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
+
 
