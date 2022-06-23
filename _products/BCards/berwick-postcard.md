@@ -2,7 +2,7 @@
 layout: productdetails
 name: Berwick Postcard
 shipping_uk_number:
-price_number: 3.5
+price_number: 3.75
 slug: berwick-postcard
 sku: bwk-postcard
 image: /uploads/Screenshot-2021-10-19-at-13.53.39.png
@@ -25,5 +25,3 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
-
-
