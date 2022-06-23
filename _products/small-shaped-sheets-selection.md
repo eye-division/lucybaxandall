@@ -2,7 +2,7 @@
 layout: productdetails
 name: Small Shaped Sheets Selection
 shipping_uk_number: 0
-price_number: 3.5
+price_number: 4
 slug: shapes-selectionA5
 sku: pp-selectshapes
 image: /uploads/img-0566.JPG
@@ -26,5 +26,3 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
-
-
