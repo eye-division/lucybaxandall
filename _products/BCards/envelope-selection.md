@@ -2,7 +2,7 @@
 layout: productdetails
 name: Envelope Selection
 shipping_uk_number: 0
-price_number: 6
+price_number: 7.5
 slug: env-selectionA6
 sku: env-selectA6
 image: /uploads/img-0347.JPG
@@ -26,5 +26,3 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
-
-
