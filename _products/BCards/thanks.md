@@ -2,7 +2,7 @@
 layout: productdetails
 name: Thanks
 shipping_uk_number: 0
-price_number: 3.5
+price_number: 3.75
 slug: thanks
 sku: thanks
 image: /uploads/img-9813-web.jpeg
@@ -22,5 +22,3 @@ _comments:
     main_image_path: Upload an image
     category: i.e. tableware
 ---
-
-
