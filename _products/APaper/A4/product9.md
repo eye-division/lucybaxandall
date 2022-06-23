@@ -2,7 +2,7 @@
 layout: productdetails
 name: Paper Selection - A4
 shipping_uk_number: 0
-price_number: 10
+price_number: 12.5
 slug: paper-selection-a4
 sku: pp-select-a4
 image: /uploads/IMG_4819.jpeg
@@ -26,5 +26,3 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
-
-

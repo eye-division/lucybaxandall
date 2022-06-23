@@ -2,7 +2,7 @@
 layout: productdetails
 name: Mucky Pup Card
 shipping_uk_number: 0
-price_number: 3.5
+price_number: 3.75
 slug: muckypup-card
 sku: mucky-card
 image: /uploads/img-0949.jpeg

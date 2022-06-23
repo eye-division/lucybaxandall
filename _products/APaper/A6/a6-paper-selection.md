@@ -2,7 +2,7 @@
 layout: productdetails
 name: Paper Selection - A6
 shipping_uk_number: 0
-price_number: 3.5
+price_number: 5
 slug: paper-selection-A6
 sku: pp-select-A6
 image: /uploads/img-0879.jpeg
@@ -27,5 +27,3 @@ _comments:
   main_image_path: Upload an image
   category: i.e. tableware
 ---
-
-
